@@ -14,4 +14,6 @@ publicRuntimeConfig:{
 
 // http://localhost:1337
 // https://backend-thecause.herokuapp.com
+
 // https://strapi-h4sn.onrender.com
+// https://ngavaka.nz/tcc-dashboard-login

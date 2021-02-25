@@ -24,9 +24,23 @@ const Home=(props)=> {
     
 //  </Container>
   )
+
+  
 }
 
 
+<style jsx global>{`
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Lobster;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+`}</style>
 // export async function getStaticProps(){
 //   // using dotenv and getting the url from env file.
 //   const {API_URL} = process.env
@@ -45,4 +59,7 @@ const Home=(props)=> {
 
 // }
 
+
+
 export default Home
+

@@ -2,8 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.mobile-button{
-  @apply  p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Lobster;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.mobile-button {
+  @apply inline-flex 
+  p-3 hover:bg-green-600 rounded lg:hidden
+   text-white ml-auto hover:text-white 
+   outline-none;
+}
+
+.button-hover {
+  @apply text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium;
+}
+
+.nav {
+  @apply transform 
+  /* has ul element invisible */
+  invisible
+  duration-150
+  -translate-y-44
+  z-10
+  opacity-0;
+}
+
+.active {
+  @apply transform visible opacity-100
+  duration-150
+  translate-y-0
+  w-full;
+}
