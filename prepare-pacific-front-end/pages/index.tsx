@@ -9,7 +9,7 @@ const Home = (props) => {
 
   //  console.log(props.movies)
   return (
-    <h2> home pages made changes</h2>
+    <h2> home pages made changesgito add <div className=""></div></h2>
     //     <Container fluid>
     //       <Row style={{justifyContent:'center'}}>
     //       {props.movies.map(movie=>(
