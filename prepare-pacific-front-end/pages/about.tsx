@@ -12,15 +12,9 @@ function About(props) {
    console.log(props.pages)
   return (
       <div>
-      <Container fluid="md">
-        <h2> {props.pages.Title}</h2>
-    
-            <Row>
-                <Col style={{justifyContent:'center'}}>
-                {/* {props.pages.description} */}
-                </Col>
-            </Row>
-        </Container>
+      
+      {props.pages.Title}
+       
       
       </div>
   )
@@ -37,7 +31,7 @@ export async function getStaticProps(){
   return {
     props: {
       // note if you want the entore aray of data use pages: response.data to get all
-        pages: response.data[1]
+        pages: response.data[8]
         
     }
     

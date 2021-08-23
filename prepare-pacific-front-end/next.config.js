@@ -12,6 +12,13 @@ publicRuntimeConfig:{
 }
 }
 
+
+
+// If you already have some config
+
+
+
+
 // http://localhost:1337
 // https://backend-thecause.herokuapp.com
 
