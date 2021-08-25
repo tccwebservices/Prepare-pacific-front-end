@@ -23,15 +23,14 @@ export default function Navigation (props){
     return(
     <>
     {/* <h1 className={Styles.title}>Hello</h1> */}
-  <nav className={style.navContainer}>
-  <div className={style.logocontainer}>
+<nav className={style.navbarContainer}>
+<div className={style.logocontainer}>
       <img src="https://via.placeholder.com/80/#808080
 C/O https://placeholder.com//808080 ?Text=Digital.com
 C/O https://placeholder.com/" alt="place holder" />
   </div>
-<div className={style.navItemsContainer}>
-
-<div className={style.navBarItems}>
+  <div className={style.navContainer}>
+  <div className={style.navBarItems}>
 {props.navigation.map(item =>(
   <li className={style.links} key={item.id}>
     <Link href={item.slug}>
@@ -46,7 +45,10 @@ C/O https://placeholder.com/" alt="place holder" />
   ))}
 
 </div>
- </div>
+ 
+  </div>
+ 
+
   
        
        

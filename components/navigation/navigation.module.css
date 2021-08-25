@@ -1,28 +1,47 @@
+.navbarContainer {
+  display: flex;
+  height: 80px;
+}
+
 .navContainer {
   display: flex;
   justify-content: flex-end;
   background-color: rgb(85, 43, 9);
+  width: 100%;
 }
 
 .logoContainer {
-  position: fixed;
-}
-
-.navItemsContainer {
-  display: flex;
-  margin-left: 45%;
+  position: static;
 }
 
 .navBarItems {
   display: flex;
+  height: 100px;
+  align-items: center;
+  height: 100%;
 }
 
-/* .navBarItems > li {
-  text-decoration: none;
+/* .navBarItems :hover {
+  align-items: center;
+  background-color: chocolate;
+  height: 100px;
+  height: auto;
 } */
-
 .links {
   list-style-type: none;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links:hover {
+  list-style-type: none;
+  align-items: center;
+  background-color: chocolate;
+  height: 100px;
+  height: auto;
+  height: 80px;
 }
 /* li {
   text-decoration: none;
