@@ -4,8 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import {Navbar} from "react-bootstrap";
 import {NavDropdown} from "react-bootstrap";
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import Styles from './navigation.module.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import style from './navigation.module.css';
 
 // import  "../styles/navigation.module.css";
 // as = what you would liek your link to look like
@@ -23,19 +23,17 @@ export default function Navigation (props){
     return(
     <>
     {/* <h1 className={Styles.title}>Hello</h1> */}
-    <nav>
- 
-  <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/">TCCc-website</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-    <Link href="">
+  <nav className={style.navContainer}>
+  <div className={style.logocontainer}>
+      <img src="https://via.placeholder.com/80/#808080
+C/O https://placeholder.com//808080 ?Text=Digital.com
+C/O https://placeholder.com/" alt="place holder" />
+  </div>
+<div className={style.navItemsContainer}>
 
-      <Nav.Link href="/about">About</Nav.Link>
-    </Link>
-      {props.navigation.map(item =>(
-  <li key={item.id}>
+<div className={style.navBarItems}>
+{props.navigation.map(item =>(
+  <li className={style.links} key={item.id}>
     <Link href={item.slug}>
 
       <Nav.Link href={item.slug}>
@@ -46,18 +44,10 @@ export default function Navigation (props){
   </li>
 
   ))}
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    
-  </Navbar.Collapse>
-</Navbar>
-    
+
+</div>
+ </div>
+  
        
        
       </nav>
@@ -81,6 +71,18 @@ export default function Navigation (props){
 //   </li>
 //   ))}
 
+// {props.navigation.map(item =>(
+//   <li key={item.id}>
+//     <Link href={item.slug}>
+
+//       <Nav.Link href={item.slug}>
+//       {item.title}
+//       </Nav.Link>
+//     </Link>
+    
+//   </li>
+
+//   ))}
 
 
 

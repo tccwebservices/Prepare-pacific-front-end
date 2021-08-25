@@ -1,0 +1,29 @@
+.navContainer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(85, 43, 9);
+}
+
+.logoContainer {
+  position: fixed;
+}
+
+.navItemsContainer {
+  display: flex;
+  margin-left: 45%;
+}
+
+.navBarItems {
+  display: flex;
+}
+
+/* .navBarItems > li {
+  text-decoration: none;
+} */
+
+.links {
+  list-style-type: none;
+}
+/* li {
+  text-decoration: none;
+} */
