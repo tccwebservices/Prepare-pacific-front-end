@@ -17,7 +17,11 @@ export default function Navigation (props){
 
   // console.log(props.navigation[0].slug)
 // console.log(props.navigation)
+const [navBar, setNavBar] = useState(false);
 
+
+// open close function.
+const shownavBar = () => setNavBar(!navBar);
   
 
     return(
@@ -45,17 +49,33 @@ C/O https://placeholder.com/" alt="place holder" />
   ))}
 
 </div>
- 
-  </div>
- 
+{/* resposive nav button in nav */}
+<button className={style.icon} 
+onClick={shownavBar}>
+  <i class="fa fa-bars"></i>
+  Button
+</button>
 
-  
-       
-       
-      </nav>
 
-      
-    </>
+  </div> 
+</nav>
+<div className={ navBar ? `${style.responisveNavActive}` : `${style.responsiveNav}`} >
+<div className={style.responsiveNavContainer}>
+{props.navigation.map(item =>(
+  <li className={style.links} key={item.id}>
+    <Link href={item.slug}>
+
+      <Nav.Link href={item.slug}>
+      {item.title}
+      </Nav.Link>
+    </Link>
+    
+  </li>
+
+  ))}
+</div>
+</div>
+</>
 )
 
 
