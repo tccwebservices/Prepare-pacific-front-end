@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import Navigation from '../components/navigation/navigation'
+import Footer from '../components/footer/footer'
 import axios from "axios";
 import getConfig from 'next/config';
 import fetch from 'isomorphic-unfetch'
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps,navigation }) {
     {/* sending data to navigation component */}
       <Navigation navigation={navigation} />
       <Component {...pageProps} />
+      {/* <Footer Footer={footer} /> */}
     
   
   </>

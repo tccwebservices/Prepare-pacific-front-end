@@ -37,11 +37,8 @@ C/O https://placeholder.com/" alt="place holder" />
   <div className={style.navBarItems}>
 {props.navigation.map(item =>(
   <li className={style.links} key={item.id}>
-    <Link href={item.slug}>
-
-      <Nav.Link href={item.slug}>
+    <Link  className={style.slug}href={item.slug}>
       {item.title}
-      </Nav.Link>
     </Link>
     
   </li>
@@ -65,9 +62,9 @@ onClick={shownavBar}>
   <li className={style.responsiveLinks} key={item.id}>
     <Link href={item.slug}>
 
-      <Nav.Link href={item.slug}>
+     
       {item.title}
-      </Nav.Link>
+    
     </Link>
     
   </li>

@@ -4,28 +4,76 @@ import Card from "../components/storycard"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import fetch from 'isomorphic-unfetch'
+import Styles from '../styles/home.module.css';
+
 // style={{display:'flex', justifyContent:'center', margin:'20px'}}
 const Home = (props) => {
 
   //  console.log(props.movies)
   return (
-    <h2> This will be the home page. <div className=""></div></h2>
-    //     <Container fluid>
-    //       <Row style={{justifyContent:'center'}}>
-    //       {props.movies.map(movie=>(
-    //         <div style={{margin:'2rem'}} >
-    //             <Card
-    //             key={movie.id}
-    //             movie={movie}
-    //             />
-    //         </div>
-    //       ))}
-    //       </Row>
+    <>
+    <section>
+    <div className={Styles.headerGridContainer}>
+        HEADER
+      <div className={Styles.heroImage}>
+     {/* <img src="https://via.placeholder.com/1000X500/000000/FFFFFF
+C/O https://placeholder.com/#How_To_Set_Background_Text_Color
+" alt="" /> */}
+    </div>
+    </div>
+    </section>
+    <section className={Styles.aboutContainer}>
+          <div className={Styles.aboutTitle}>
+              ABOUT
+          </div>
+    </section>
+    <section className={Styles.foodbankContainer}>
+          <div className={Styles.foodbankTitle}>
+              FOODBANK
+          </div>
+    </section>
+    <section className={Styles.resourcesContainer}>
+          <div className={Styles.resourcesTitle}>
+              RESOURCES
+          </div>
+    </section>
+    
+    {/* <section className={Styles.contactSection}>
+      <div className={Styles.contactContainer}>
+      <h1 className={Styles.contactTitle}>
+         CONTACT
+    </h1>
+     <div className={Styles.contactGridContainer}>
+        <div className={Styles.grid}>200px x 200px</div>
+        <div className={Styles.grid}>200px x 200px</div>
+        <div className={Styles.grid}>200px x 200px</div>
+        <div className={Styles.grid}>200px x 200px</div>
+        <div className={Styles.grid}>200px x 200px</div>
+        <div className={Styles.grid}>200px x 200px</div>
+   </div>
+      </div>
+   
+    </section> */}
+    </>
 
-    //  </Container>
+
+
+//     <Container fluid>
+//       <Row style={{justifyContent:'center'}}>
+//       {props.movies.map(movie=>(
+//         <div style={{margin:'2rem'}} >
+//             <Card
+//             key={movie.id}
+//             movie={movie}
+//             />
+//         </div>
+//       ))}
+//       </Row>
+    
+//  </Container>
   )
 
-
+  
 }
 
 

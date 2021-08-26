@@ -1,0 +1,37 @@
+/* Body*/
+
+body {
+    margin: 0;
+    /* margin-left: 80px; */
+  }
+  
+  navbar {
+    margin-left: 80px;
+  }
+  
+  section {
+    margin-left: 80px;
+  }
+  
+  footer {
+    margin-left: 80px;
+  }
+
+
+
+  /* Footer */
+
+.footerTitle {
+  color: black;
+  display: flex;
+  width: 33%;
+
+}
+
+.footerContainer {
+  background-color: yellow;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  height: 100vh;
+}

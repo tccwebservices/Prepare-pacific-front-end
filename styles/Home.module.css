@@ -1,9 +1,159 @@
-//Your customizations must come before bootstrap import
+/* Header */
 
-$enable-shadows: true;
-$primary: rgb(0, 19, 223);
+.heroImage {
+  background-color: black;
+  border-bottom: 2px solid white;
+  height: 100vh;
+  width: 100%;
+}
 
-$body-color: #333;
-$body-bg: #f2f2f2;
+.headerGridContainer {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+}
 
-@import "../scss/bootstrap.scss";
+/* About */
+
+.aboutColumns {
+  background-color: black;
+  display: flex;
+  height: 70vh;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.aboutContainer {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  height: 100vh;
+}
+
+.aboutTitle {
+  color: white;
+  display: flex;
+  width: 33%;
+}
+
+/* Contact */
+
+.contactContainer {
+  align-items: center;
+  display: block;
+  width: 80%;
+}
+
+.contactGridContainer {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.contactSection {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.contactTitle {
+  display: flex;
+  justify-content: left;
+}
+
+.grid {
+  align-items: center;
+  background: #444;
+  border: 1px solid #555;
+  color: #aaa;
+  display: flex;
+  justify-content: center;
+}
+
+/* Foodbank */
+
+.foodbankTitle {
+  color: white;
+  display: flex;
+  width: 33%;
+}
+
+.foodbankContainer {
+  background-color: blue;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  height: 100vh;
+}
+
+.title2 {
+  text-align: center;
+}
+
+/* Resource */
+
+
+.resourcesTitle {
+  color: black;
+  display: flex;
+  width: 33%;
+
+}
+
+.resourcesContainer {
+  background-color: yellow;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  height: 100vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .aboutColumns {
+    align-items: center;
+    border-bottom: white solid 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutTitle {
+    height: 20vh;
+  }
+  
+  .contactContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .contactGridContainer {
+    display: block;
+    align-items: center;
+  }
+  
+  .foodbank {
+    border-bottom: white 2px solid;
+    border-right: none;
+    height: 40vh;
+    padding-top: 5%;
+    width: 100%;
+  }
+  
+  .grid {
+    height: 150px;
+  }
+  
+  .title1 {
+    text-align: center;
+  }
+
+  .resources {
+    width: 100%;
+    height: 40vh;
+  }
+}

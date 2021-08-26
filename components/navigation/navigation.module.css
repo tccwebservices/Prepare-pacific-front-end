@@ -29,10 +29,21 @@
 } */
 .links {
   list-style-type: none;
+  text-decoration: none;
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.links a:hover {
+  color: black;
 }
 
 .links:hover {
@@ -53,7 +64,7 @@
   overflow: hidden;
 }
 
-/* Resonsive NAv  */
+/* Resonsive Nav  */
 
 @media only screen and (max-width: 600px) {
   /* .navBarItems {
@@ -114,5 +125,13 @@
 
   .responsiveLinks:hover {
     background-color: chocolate;
+  }
+
+  .responsiveLinks a {
+    text-decoration: none;
+    color: white;
+  }
+  .responsiveLinks a:hover {
+    color: black;
   }
 }
