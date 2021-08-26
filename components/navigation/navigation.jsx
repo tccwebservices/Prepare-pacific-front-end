@@ -52,7 +52,7 @@ C/O https://placeholder.com/" alt="place holder" />
 {/* resposive nav button in nav */}
 <button className={style.icon} 
 onClick={shownavBar}>
-  <i class="fa fa-bars"></i>
+  <i className="fa fa-bars"></i>
   Button
 </button>
 
@@ -62,7 +62,7 @@ onClick={shownavBar}>
 <div className={ navBar ? `${style.responisveNavActive}` : `${style.responsiveNav}`} >
 <div className={style.responsiveNavContainer}>
 {props.navigation.map(item =>(
-  <li className={style.links} key={item.id}>
+  <li className={style.responsiveLinks} key={item.id}>
     <Link href={item.slug}>
 
       <Nav.Link href={item.slug}>

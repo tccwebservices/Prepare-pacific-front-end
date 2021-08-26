@@ -48,7 +48,9 @@
 }
 
 .responsiveNav {
-  display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 /* Resonsive NAv  */
@@ -77,21 +79,40 @@
     display: none;
   }
 
-  .responisveNavActive {
-    display: block;
-    transition: 0.5s;
-    height: auto;
-
-    transition: 0.5s;
+  .responsiveNav {
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translatey(-100%);
   }
 
-  .responsiveNav {
-    /* overflow-y: hidden; */
-    display: none;
+  .responisveNavActive {
+    transform: translatey(0%);
+    opacity: 1;
     transition: 0.5s;
   }
 
   .responsiveNavContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: rgb(85, 43, 9);
+  }
+
+  .responsiveLinks {
+    padding-top: 5%;
+    list-style-type: none;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .responsiveLinks:hover {
+    background-color: chocolate;
   }
 }
