@@ -12,6 +12,10 @@
 
 .logoContainer {
   position: static;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 5px;
+    width: 80px;
 }
 
 .navBarItems {

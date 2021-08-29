@@ -1,0 +1,39 @@
+/* Grid Key */
+
+.headerHome {
+  grid-area: hd;
+  z-index: 1;
+}
+
+.footerHome {
+  grid-area: ft;
+}
+
+.contentHome {
+  grid-area: main;
+  z-index: 8;
+  
+}
+
+.sidebarLeft {
+  grid-area: sdl;
+  z-index: 2;
+}
+
+.sidebarRight {
+  grid-area: sdr;
+  z-index: 3;
+}
+
+/* Grid Layout */
+
+.bodyWrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "hd hd hd hd   hd   hd   hd   hd"
+    "sdl sdl sdl main main main sdr sdr"
+    "ft ft ft ft   ft   ft   ft   ft";
+}
+

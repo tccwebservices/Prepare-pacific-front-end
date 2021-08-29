@@ -5,96 +5,32 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import fetch from 'isomorphic-unfetch'
 import Styles from '../styles/home.module.css';
+import Utils from '../styles/utils.module.css';
 
 // style={{display:'flex', justifyContent:'center', margin:'20px'}}
 const Home = (props) => {
 
   //  console.log(props.movies)
   return (
-    <>
-    <section>
-    <div className={Styles.headerGridContainer}>
-        HEADER
-      <div className={Styles.heroImage}>
-     {/* <img src="https://via.placeholder.com/1000X500/000000/FFFFFF
-C/O https://placeholder.com/#How_To_Set_Background_Text_Color
-" alt="" /> */}
+
+
+<section className={Styles.mainWrapper}>
+  <div className={Styles.sideBarLeft__Image}><h2>Side Bar Left</h2>
+  </div>
+  <div className={Styles.heroHome__Image}></div>
+  <div className={Styles.contentMain}><h2>Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    </div>
-    </section>
-    <section className={Styles.aboutContainer}>
-          <div className={Styles.aboutTitle}>
-              ABOUT
-          </div>
-    </section>
-    <section className={Styles.foodbankContainer}>
-          <div className={Styles.foodbankTitle}>
-              FOODBANK
-          </div>
-    </section>
-    <section className={Styles.resourcesContainer}>
-          <div className={Styles.resourcesTitle}>
-              RESOURCES
-          </div>
-    </section>
+    <div className={Styles.sideBarRight__Image}><h2>Side Bar Right</h2>
+    <p class="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
-    {/* <section className={Styles.contactSection}>
-      <div className={Styles.contactContainer}>
-      <h1 className={Styles.contactTitle}>
-         CONTACT
-    </h1>
-     <div className={Styles.contactGridContainer}>
-        <div className={Styles.grid}>200px x 200px</div>
-        <div className={Styles.grid}>200px x 200px</div>
-        <div className={Styles.grid}>200px x 200px</div>
-        <div className={Styles.grid}>200px x 200px</div>
-        <div className={Styles.grid}>200px x 200px</div>
-        <div className={Styles.grid}>200px x 200px</div>
-   </div>
-      </div>
-   
-    </section> */}
-    </>
+  </div>
+</section>
 
-
-
-//     <Container fluid>
-//       <Row style={{justifyContent:'center'}}>
-//       {props.movies.map(movie=>(
-//         <div style={{margin:'2rem'}} >
-//             <Card
-//             key={movie.id}
-//             movie={movie}
-//             />
-//         </div>
-//       ))}
-//       </Row>
-    
-//  </Container>
   )
-
-  
 }
-
-
-
-// export async function getStaticProps(){
-//   // using dotenv and getting the url from env file.
-//   const {API_URL} = process.env
-
-//   // const res = await fetch(`${API_URL}/movies`)
-//   // const response = await res.json()
-//   const response = await axios.get(`${API_URL}/movies`)
-
-
-
-//   return {
-//     props: {
-//         movies: response.data
-//     }
-// }
-
-// }
 
 
 

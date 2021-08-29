@@ -1,4 +1,7 @@
 /* Body*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -9,11 +12,15 @@ body {
     margin-left: 80px;
   }
   
-  section {
+  /* section {
     margin-left: 80px;
-  }
+  } */
   
-  footer {
+  p.right {
+    text-align: right;
+  }
+
+footer {
     margin-left: 80px;
   }
 

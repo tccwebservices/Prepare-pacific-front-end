@@ -28,10 +28,12 @@ const shownavBar = () => setNavBar(!navBar);
     <>
     {/* <h1 className={Styles.title}>Hello</h1> */}
 <nav className={style.navbarContainer}>
-<div className={style.logocontainer}>
+  <div className={style.logocontainer}>
+    <a target="/index" href="">
       <img src="https://via.placeholder.com/80/#808080
 C/O https://placeholder.com//808080 ?Text=Digital.com
 C/O https://placeholder.com/" alt="place holder" />
+    </a>
   </div>
   <div className={style.navContainer}>
   <div className={style.navBarItems}>
@@ -48,29 +50,24 @@ C/O https://placeholder.com/" alt="place holder" />
 </div>
 {/* resposive nav button in nav */}
 <button className={style.icon} 
-onClick={shownavBar}>
-  <i className="fa fa-bars"></i>
-  Button
+    onClick={shownavBar}>
+      <i className="fa fa-bars"></i>
+    Button
 </button>
 
 
   </div> 
 </nav>
 <div className={ navBar ? `${style.responisveNavActive}` : `${style.responsiveNav}`} >
-<div className={style.responsiveNavContainer}>
-{props.navigation.map(item =>(
-  <li className={style.responsiveLinks} key={item.id}>
-    <Link href={item.slug}>
-
-     
-      {item.title}
-    
-    </Link>
-    
-  </li>
-
-  ))}
-</div>
+  <div className={style.responsiveNavContainer}>
+        {props.navigation.map(item =>(
+          <li className={style.responsiveLinks} key={item.id}>
+            <Link href={item.slug}>
+                {item.title}
+            </Link>
+          </li>)
+        )}
+  </div>
 </div>
 </>
 )
