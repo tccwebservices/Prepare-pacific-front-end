@@ -1,44 +1,14 @@
-/* Body*/
-html {
-  scroll-behavior: smooth;
+li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
 }
 
-body {
-    margin: 0;
-    /* margin-left: 80px; */
-  }
-  
-  navbar {
-    margin-left: 80px;
-  }
-  
-  /* section {
-    margin-left: 80px;
-  } */
-  
-  p.right {
-    text-align: right;
-  }
-
-footer {
-    margin-left: 80px;
-  }
-
-
-
-  /* Footer */
-
-.footerTitle {
-  color: black;
-  display: flex;
-  width: 33%;
-
+li > a {
+  text-decoration: none;
 }
 
-.footerContainer {
-  background-color: yellow;
-  color: black;
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  height: 100vh;
+h2,
+h3 {
+  color: rgb(226, 155, 48);
 }
