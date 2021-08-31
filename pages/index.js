@@ -19,7 +19,11 @@ const Home = (props) => {
           </div>
           <div className={style.grid2}>Content</div>
           <div className={style.grid3}>Picture</div>
-          <div className={style.grid4}>Scroll</div>
+          <div className={style.grid4}>
+            <div className={style.scrollDiv}>
+            
+            </div>
+          </div>
           <div className={style.grid5}>Button</div>
         </div>
       </div>
