@@ -1,88 +1,48 @@
 .footerContainer {
-    background-color: black;
-    border-top: white solid 2px;
-    color: white;
-    border-bottom: white solid 2px;
-  }
-  
+  background-color: #555;
+  color: white;
+  height: 100px;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+}
+
+@media only screen and (max-width: 600px) {
   .gridContainer {
     display: flex;
-    justify-content: space-between;
-    height: 20vh;
+    align-items: center;
+    flex-direction: column;
+    height: none;
+
+    border-bottom: white solid 2px;
   }
-  
   .grid1 {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 33%;
-    border-right: white solid 2px;
+    border-right: none;
+    height: 20vh;
+    border-bottom: white 2px solid;
   }
-  
-  .grid1Title {
-    text-align: center;
-  }
-  
+
   .grid2 {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 33%;
-    border-right: white solid 2px;
+    border-right: none;
+    height: 20vh;
+    border-bottom: white 2px solid;
   }
-  
-  .grid2Title {
-    text-align: center;
-  }
-  
   .grid3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 33%;
+    height: 20vh;
   }
-  
-  .grid3Title {
-    text-align: center;
+
+  .buttonContainer {
+    height: 20vh;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .gridContainer {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height: none;
-  
-      border-bottom: white solid 2px;
-    }
-    .grid1 {
-      width: 100%;
-      display: flex;
-      border-right: none;
-      height: 20vh;
-      border-bottom: white 2px solid;
-    }
-  
-    .grid2 {
-      width: 100%;
-      display: flex;
-      border-right: none;
-      height: 20vh;
-      border-bottom: white 2px solid;
-    }
-    .grid3 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      height: 20vh;
-    }
-  
-    .buttonContainer {
-      height: 20vh;
-    }
-  }
-  
+}
