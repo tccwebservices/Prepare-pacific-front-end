@@ -2,14 +2,14 @@
 
 .mainWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  /* grid-auto-rows: minmax(100px, auto); */
 }
 
 /* Hero */
 
-.hero__Image {
+.family__Image {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   background-image: url("../images/FAMILY\ 2_JD02810.jpg");
@@ -53,13 +53,12 @@
   z-index: 2;
   margin-left: 80px;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .leftPattern {
   background-color: #555;
   width: 170px;
-  height: 100%;
+  height: 98%;
 }
 
 .grid2 {
@@ -85,7 +84,6 @@
 .grid4 {
   margin-top: 40px;
   margin-right: 80px;
-  margin-bottom: 40px;
   grid-column-start: 4;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -100,7 +98,7 @@
 .scrollDiv {
   background-color: #555;
   width: 46px;
-  height: 100%;
+  height: 98%;
 }
 .grid5 {
   display: flex;
@@ -111,7 +109,6 @@
   grid-row-start: 2;
   grid-row-end: 3;
   border: 1px solid #555;
-  margin-bottom: 40px;
 }
 
 .buttonContainer {
@@ -119,7 +116,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .healthLineButton {
@@ -147,69 +144,73 @@
   box-shadow: 0 5px #666;
   transform: translateY(3px);
 }
-/* Side Bar Left */
-/* .sideBarLeft__Image {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    /* background-image: url("../images/wheelchair_man.png"); */
-/* background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: left;
-  
-    z-index: 1; */
-/* }  */
 
-/* Content */
-/* .contentMain {
-    grid-column: 2 / 4;
-    grid-row: 1 / 4;
-    z-index: 1;
-  } */
+/* secondSection */
 
-/* Side Bar (Right) */
-
-/* .sideBarRight__Image {
-    grid-column: 5 / -1;
-    grid-row: 1 / 4;
-    /* background-image: url("../images/lady_standing.png"); */
-/* background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: left;
-    z-index: 1; */
-/* } */
-
-/* Footer */
-
-/* Grid Key */
-
-.headerHome {
-  grid-area: hd;
+.hero__Overlay2 {
+  background-color: rgba(109, 69, 128, 0.932);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
-.contentHome {
-  grid-area: main;
-  z-index: 8;
+.arrowDown {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 15px;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    infinite both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
-.sidebarLeft {
-  grid-area: sdl;
-  z-index: 2;
+@keyframes arrowDown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+@keyframes arrowDown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
 }
 
-.sidebarRight {
-  grid-area: sdr;
-  z-index: 3;
+.informationButton {
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(92, 59, 107, 0.932);
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Grid Layout */
+.informationButton:hover {
+  /* color: rgb(226, 155, 48); */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
 
-/* .bodyWrapper {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-      "hd hd hd hd   hd   hd   hd   hd"
-      "sdl sdl sdl main main main sdr sdr"
-      "ft ft ft ft   ft   ft   ft   ft";
-  } */
+.informationButton:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
