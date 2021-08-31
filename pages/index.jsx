@@ -14,17 +14,23 @@ const Home = (props) => {
         <div className={style.contentContainer}>
           <div className={style.grid1}>
           <div className={style.leftPattern}>
-         
          </div>
           </div>
-          <div className={style.grid2}>Content</div>
+          <div className={style.grid2}>
+            contentssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
+          </div>
           <div className={style.grid3}>Picture</div>
           <div className={style.grid4}>
             <div className={style.scrollDiv}>
-            
+             
             </div>
           </div>
-          <div className={style.grid5}>Button</div>
+          <div className={style.grid5}>
+          <div className={style.buttonContainer} >
+          <button className={style.healthLineButton}>NEW HEALTHLINE</button>
+          </div>
+          </div>
         </div>
       </div>
     </section>
