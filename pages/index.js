@@ -12,7 +12,7 @@ const Home = (props) => {
       </div>
       <div className={style.hero__Overlay}>
         <div className={style.contentContainer}>
-          <div className={style.grid1}>left side bar HEELOO</div>
+          <div className={style.grid1}>left side bar </div>
           <div className={style.grid2}>Content</div>
           <div className={style.grid3}>Picture</div>
           <div className={style.grid4}>Scroll</div>

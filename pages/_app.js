@@ -1,4 +1,3 @@
-
 // import Navigation from '../components/navigation/navigation'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Layout from "../components/layout";
