@@ -12,7 +12,6 @@
 .contentHome {
   grid-area: main;
   z-index: 8;
-  
 }
 
 .sidebarLeft {
@@ -27,7 +26,7 @@
 
 /* Grid Layout */
 
-.bodyWrapper {
+/* .bodyWrapper {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: minmax(100px, auto);
@@ -35,5 +34,4 @@
     "hd hd hd hd   hd   hd   hd   hd"
     "sdl sdl sdl main main main sdr sdr"
     "ft ft ft ft   ft   ft   ft   ft";
-}
-
+} */

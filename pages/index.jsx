@@ -4,25 +4,12 @@ import Card from "../components/storycard"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import fetch from 'isomorphic-unfetch'
+import Styles from '../styles/Home.module.css';
 // style={{display:'flex', justifyContent:'center', margin:'20px'}}
 const Home = (props) => {
 
   //  console.log(props.movies)
   return (
-    // <h2> This will be the home page. <div className=""></div></h2>
-    //     <Container fluid>
-    //       <Row style={{justifyContent:'center'}}>
-    //       {props.movies.map(movie=>(
-    //         <div style={{margin:'2rem'}} >
-    //             <Card
-    //             key={movie.id}
-    //             movie={movie}
-    //             />
-    //         </div>
-    //       ))}
-    //       </Row>
-
-    //  </Container>
    
 <>
 <section className={Styles.mainWrapper}>

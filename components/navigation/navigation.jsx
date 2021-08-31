@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import style from './navigation.module.css';
+import Styles from './navigation.module.css';
 
 // import  "../styles/navigation.module.css";
 // as = what you would liek your link to look like
@@ -30,18 +30,18 @@ const shownavOverlay = () => setnavOverlay(!navOverlay);
   return(
     <>
   {/* <OverlayNav showOverlay={shownavBar}/> */}
-  {/* className={ navOverlay ? `${style.overlayActive}` : `${style.overlay} */}
+  {/* className={ navOverlay ? `${Styles.overlayActive}` : `${Styles.overlay} */}
   {/* About overlayNAv //////////////////  */}
-  <div className={style.alertStripe}>
- <p className={style.alertTitle}>
+  <div className={Styles.alertStripe}>
+ <p className={Styles.alertTitle}>
    ALERT
  </p>
  
 </div>
-  <div className={ navOverlay ? `${style.overlayActive}` : `${style.overlay}`}>
-  <a  className={style.closebtn} 
+  <div className={ navOverlay ? `${Styles.overlayActive}` : `${Styles.overlay}`}>
+  <a  className={Styles.closebtn} 
   onClick={shownavOverlay}>&times;</a>
-  <div  onClick={shownavOverlay} className={style.overlayContent}>
+  <div  onClick={shownavOverlay} className={Styles.overlayContent}>
     <a href="#">About</a>
     <a href="#">Services</a>
     <a href="#">Clients</a>
@@ -49,25 +49,25 @@ const shownavOverlay = () => setnavOverlay(!navOverlay);
   </div>
 </div>
 {/* ////////////////////////////////////////// */}
-<nav className={style.navbarContainer}>
-<div className={style.logocontainer}>
+<nav className={Styles.navbarContainer}>
+<div className={Styles.logocontainer}>
       <img src="https://via.placeholder.com/80/#808080
 C/O https://placeholder.com//808080 ?Text=Digital.com
 C/O https://placeholder.com/" alt="place holder" />
   </div>
  
-  <div className={style.navContainer}>
+  <div className={Styles.navContainer}>
 
-<div className={style.navBarItems}>
+<div className={Styles.navBarItems}>
 
-<li className={style.links} 
+<li className={Styles.links} 
 key={props.navigation[0].id}>
-   <div className={style.aboutButton} 
+   <div className={Styles.aboutButton} 
 onClick={shownavOverlay}>
   {props.navigation[0].title}
 </div>
 </li>
-    <li className={style.links}>
+    <li className={Styles.links}>
         <Link  
         
         href={props.navigation[1].slug}
@@ -75,7 +75,7 @@ onClick={shownavOverlay}>
         {props.navigation[1].title}
         </Link> 
     </li>
-<li className={style.links}>
+<li className={Styles.links}>
 <Link  
 
 href={props.navigation[2].slug}
@@ -84,39 +84,39 @@ href={props.navigation[2].slug}
  </Link> 
 </li>
 
-<li className={style.dropbtn}>
+<li className={Styles.dropbtn}>
   {/* Mega-nav  layout  */}
   <div className="">
       {props.navigation[3].title}
     <i className="fa fa-caret-down"></i>
     <div className="">
     
-    <div className={style.dropdownContent}>
-      <div className={style.header}>
+    <div className={Styles.dropdownContent}>
+      <div className={Styles.header}>
      
       </div>
-      <div className={style.columnContainer}>
-      <div className={style.row}>
-       <div className={style.column}>
-          <h3 className={style.header}>Vaccinations & COVID-19 Info</h3>
+      <div className={Styles.columnContainer}>
+      <div className={Styles.row}>
+       <div className={Styles.column}>
+          <h3 className={Styles.header}>Vaccinations & COVID-19 Info</h3>
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <div className={style.column}>
-          <h3  className={style.header}>Resources</h3>
+        <div className={Styles.column}>
+          <h3  className={Styles.header}>Resources</h3>
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <div className={style.column}>
-          <h3 className={style.header}>Talanoa Videos</h3>
+        <div className={Styles.column}>
+          <h3 className={Styles.header}>Talanoa Videos</h3>
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-        <div className={style.columnLast}>
-          <div className={style.imgContainer}>
+        <div className={Styles.columnLast}>
+          <div className={Styles.imgContainer}>
         
           </div>
         </div>
@@ -138,7 +138,7 @@ href={props.navigation[2].slug}
 
 </div>
 {/* resposive nav button in nav */}
-<button className={style.icon} 
+<button className={Styles.icon} 
 onClick={shownavBar}>
   <i className="fa fa-bars"></i>
   Button
@@ -149,10 +149,10 @@ onClick={shownavBar}>
 </nav>
 
 
-<div className={ navBar ? `${style.responisveNavActive}` : `${style.responsiveNav}`} >
-<div className={style.responsiveNavContainer}>
+<div className={ navBar ? `${Styles.responisveNavActive}` : `${Styles.responsiveNav}`} >
+<div className={Styles.responsiveNavContainer}>
 {props.navigation.map(item =>(
-  <li className={style.responsiveLinks} key={item.id}>
+  <li className={Styles.responsiveLinks} key={item.id}>
     <Link href={item.slug}>
 
      
@@ -173,7 +173,7 @@ onClick={shownavBar}>
 
 {/* <Link  
 onClick={shownavBar}
-className={style.slug}
+className={Styles.slug}
 // href={props.navigation[9].slug}
 >
   placeholder
