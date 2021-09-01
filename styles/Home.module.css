@@ -12,11 +12,11 @@
 .family__Image {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  background-image: url("../images/FAMILY\ 2_JD02810.jpg");
+  background-image: url("../images/FAMILY-2_JD02810.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 92vh;
 }
 
 .hero__Overlay {
@@ -28,18 +28,36 @@
   z-index: 1;
 }
 
-.contentContainer {
+/* contentContainer for the first section (had to be pushed down for 
+sticky NAV and alert) */
+.contentContainerMain {
   display: grid;
   width: 100%;
-  height: 100vh;
+  height: 82vh;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
+  margin-top: 100px;
   /*  A function taking two parameters, min and max.*/
   /* If max < min, then max is ignored and minmax(min,max) is treated as min */
   grid-auto-rows: minmax(300px, auto);
   z-index: 2;
 }
 
+/* containers for the rest of the sections */
+.contentContainer {
+  display: grid;
+  width: 100%;
+  height: 80vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  /* margin-top: 100px; */
+  /*  A function taking two parameters, min and max.*/
+  /* If max < min, then max is ignored and minmax(min,max) is treated as min */
+  grid-auto-rows: minmax(300px, auto);
+  z-index: 2;
+}
+
+/* grid layouts for therest of the  */
 .grid1 {
   /* background: #444; */
   grid-column-start: 1;
@@ -111,6 +129,27 @@
   border: 1px solid #555;
 }
 
+/* arrow for brown buttons //////////////////// */
+.arrowDown {
+  color: rgb(85, 43, 9);
+  /* -webkit-transform: rotate(45deg); */
+  margin-bottom: 15px;
+  /* -webkit-animation: bounce 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+    both; */
+  animation: bounce 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -119,7 +158,7 @@
   margin-bottom: 70px;
 }
 
-.healthLineButton {
+.brownButton {
   border-radius: 40px;
   padding: 10px;
   padding-left: 20px;
@@ -133,19 +172,19 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.healthLineButton:hover {
+.brownButton:hover {
   color: rgb(226, 155, 48);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.1);
 }
 
-.healthLineButton:active {
+.brownButton:active {
   box-shadow: 0 5px #666;
   transform: translateY(3px);
 }
 
-/* secondSection */
+/* section2- WHITE/////////////////// */
 
 .hero__Overlay2 {
   background-color: rgba(109, 69, 128, 0.932);
@@ -156,41 +195,28 @@
   z-index: 1;
 }
 
-.arrowDown {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+/* White arrows */
+.arrowDown2 {
+  color: white;
+  /* -webkit-transform: rotate(45deg); */
   margin-bottom: 15px;
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    infinite both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  /* -webkit-animation: bounce 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+    both; */
+  animation: bounce 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
-@keyframes arrowDown {
+@keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-}
-@keyframes arrowDown {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
-.informationButton {
+.whiteButton {
   border-radius: 40px;
   padding: 10px;
   padding-left: 20px;
@@ -203,14 +229,62 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.informationButton:hover {
+.whiteButton:hover {
   /* color: rgb(226, 155, 48); */
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.1);
 }
 
-.informationButton:active {
+.whiteButton:active {
   box-shadow: 0 5px #666;
   transform: translateY(3px);
+}
+
+/* section3 -WHITE//////////////////////////////////// */
+
+.family__Image3 {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  height: 92vh;
+}
+
+.hero__Overlay3 {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* section4 -BLUE //////////////////////////////////////// */
+
+.hero__Overlay4 {
+  background-color: rgba(48, 129, 206, 0.932);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* section5- GREY//////////////////////////////////// */
+
+.testingStation__Image {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-image: url("../images/Covid19_testingStation.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+}
+
+.hero__Overlay5 {
+  background-color: rgba(80, 86, 92, 0.932);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
