@@ -40,6 +40,7 @@ export default function Navigation(props) {
                 <a className={style.closebtn}
                     onClick={shownavOverlay}>&times;</a>
                 <div onClick={shownavOverlay} className={style.overlayContent}>
+                   
                     <section className={style.aboutSection}>
                     <div className={style.aboutSection__Logo}>
                           <img src="https://via.placeholder.com/80/#808080

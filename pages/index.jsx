@@ -77,29 +77,29 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-     
     </section>
     {/* section3 -WHITE */}
     <section className={style.mainWrapper}>
       <div className={style.family__Image3}>
       </div>
       <div className={style.hero__Overlay3}>
-        <div className={style.contentContainer}>
-          <div className={style.grid1}>
-          <div className={style.leftPattern}>
+        <div className={style.contentContainerA}>
+          <div className={style.grid1A}>
+          <div className={style.leftPatternA}>
          </div>
           </div>
-          <div className={style.grid2}>
+          <div className={style.grid2A}>
             content
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
+           Grid 1
           </div>
-          <div className={style.grid3}>Picture</div>
-          <div className={style.grid4}>
+          <div className={style.grid3A}>grid2</div>
+          <div className={style.grid4A}>grid3</div>
+          <div className={style.grid5A}>
             <div className={style.scrollDiv}>
              
             </div>
           </div>
-          <div className={style.grid5}>
+          <div className={style.grid6A}>
           <div className={style.buttonContainer} >
           
           <FontAwesomeIcon className={style.arrowDown}
@@ -110,8 +110,8 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-     {/* section4- BLUE */}
     </section>
+     {/* section4- BLUE */}
     <section className={style.mainWrapper}>
       <div className={style.family__Image}>
       </div>
@@ -142,33 +142,42 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-     {/* section5 -WHITE */}
-    </section>
-    <section className={style.mainWrapper}>
+     </section>
+     {/* section5 -GREY*/}
+     <section className={style.mainWrapper}>
       <div className={style.testingStation__Image}>
       </div>
       <div className={style.hero__Overlay5}>
-        <div className={style.contentContainer}>
-          <div className={style.grid1}>
-          <div className={style.leftPattern}>
-         </div>
+        <div className={style.contentContainerA}>
+          <div className={style.grid1A}>
+          {/* <div className={style.leftPatternA}>
+         </div> */}
           </div>
-          <div className={style.grid2}>
-            content
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
+          <div className={style.grid2A}>
+            contentsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+           Grid 1
           </div>
-          <div className={style.grid3}>Picture</div>
-          <div className={style.grid4}>
+          <div className={style.grid3A}>grid2</div>
+          <div className={style.grid4A}>grid3</div>
+          <div className={style.grid5A}>
             <div className={style.scrollDiv}>
              
             </div>
           </div>
-          <div className={style.grid5}>
+          <div className={style.grid6A}>
+          <div className={style.buttonContainer} >
+          
+          <FontAwesomeIcon className={style.arrowDown}
+          icon={faChevronDown} 
+          />
+          <button className={style.brownButton}>NEW HEALTHLINE</button>
+          </div>
           </div>
         </div>
       </div>
-     
     </section>
+   
+ 
     </>
 
   )
