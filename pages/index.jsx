@@ -60,7 +60,7 @@ const Home = (props) => {
             content
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
           </div>
-          <div className={style.grid3}>Picture</div>
+          <div className={style.grid3}>PictureSSSSSSS</div>
           <div className={style.grid4}>
             <div className={style.scrollDiv}>
              
