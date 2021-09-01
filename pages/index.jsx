@@ -142,7 +142,7 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-     
+     {/* section5 -WHITE */}
     </section>
     <section className={style.mainWrapper}>
       <div className={style.testingStation__Image}>
