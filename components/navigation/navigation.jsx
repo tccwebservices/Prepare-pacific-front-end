@@ -40,10 +40,22 @@ export default function Navigation(props) {
                 <a className={style.closebtn}
                     onClick={shownavOverlay}>&times;</a>
                 <div onClick={shownavOverlay} className={style.overlayContent}>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
+                    <section className={style.aboutSection}>
+                    <div className={style.aboutSection__Logo}>
+                          <img src="https://via.placeholder.com/80/#808080
+                          C/O https://placeholder.com//808080 ?Text=Digital.com
+                          C/O https://placeholder.com/" alt="place holder" />
+                    </div>
+                    <h1>TITLE</h1>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
+                    </section>
+                    <section className={style.aboutSection}>
+                    <div className={style.aboutSection__Image}>
+                    <img src="https://via.placeholder.com/400" alt="place holder" />
+                    
+                    </div>
+                    </section>
                 </div>
             </div>
             {/* ////////////////////////////////////////// */}
@@ -199,13 +211,14 @@ C/O https://placeholder.com/" alt="place holder" />
                                     <a href="#">Link 3</a>
                                 </div>
                                 <div className={style.columnLastResponsive}>
+                                    
                                     {/* <div className={style.imgContainer}>
         
           </div> */}
+          
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
