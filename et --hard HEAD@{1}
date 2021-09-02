@@ -1,0 +1,71 @@
+[33mc3f4f0e[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m)[m HEAD@{0}: commit: adding no pic for performance
+[33mcd47ba2[m HEAD@{1}: commit: added changes for conflict
+[33m50c0845[m[33m ([m[1;32mmain[m[33m)[m HEAD@{2}: checkout: moving from main to develop
+[33m50c0845[m[33m ([m[1;32mmain[m[33m)[m HEAD@{3}: merge develop: Fast-forward
+[33m992966e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{4}: checkout: moving from develop to main
+[33m50c0845[m[33m ([m[1;32mmain[m[33m)[m HEAD@{5}: commit: added container fixes
+[33mff3c638[m HEAD@{6}: commit: added picture alert stripes picture
+[33m992966e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{7}: checkout: moving from main to develop
+[33m992966e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{8}: merge develop: Fast-forward
+[33m132942f[m HEAD@{9}: checkout: moving from develop to main
+[33m992966e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{10}: commit: added the lyout finish to home page
+[33m132942f[m HEAD@{11}: checkout: moving from main to develop
+[33m132942f[m HEAD@{12}: merge develop: Fast-forward
+[33m256c958[m HEAD@{13}: checkout: moving from develop to main
+[33m132942f[m HEAD@{14}: commit: added the z-index to overlay
+[33m3802be1[m HEAD@{15}: pull: Fast-forward
+[33m256c958[m HEAD@{16}: checkout: moving from main to develop
+[33m256c958[m HEAD@{17}: merge develop: Fast-forward
+[33m85322ba[m HEAD@{18}: checkout: moving from develop to main
+[33m256c958[m HEAD@{19}: commit: added z-inndex: 4 to the about over lay
+[33m85322ba[m HEAD@{20}: checkout: moving from main to develop
+[33m85322ba[m HEAD@{21}: merge develop: Fast-forward
+[33m6883181[m HEAD@{22}: checkout: moving from develop to main
+[33m85322ba[m HEAD@{23}: commit: added some chnags for testing
+[33m6883181[m HEAD@{24}: checkout: moving from main to develop
+[33m6883181[m HEAD@{25}: merge develop: Fast-forward
+[33m45937b5[m HEAD@{26}: checkout: moving from develop to main
+[33m6883181[m HEAD@{27}: commit: added devlop branch layout changes
+[33m45937b5[m HEAD@{28}: merge main: Fast-forward
+[33m96487b1[m HEAD@{29}: checkout: moving from main to develop
+[33m45937b5[m HEAD@{30}: commit: adding to index page
+[33me430fac[m HEAD@{31}: merge develop: Merge made by the 'recursive' strategy.
+[33m84eaf9e[m HEAD@{32}: checkout: moving from develop to main
+[33m96487b1[m HEAD@{33}: commit: adding changes
+[33mf1be1e7[m HEAD@{34}: checkout: moving from main to develop
+[33m84eaf9e[m HEAD@{35}: checkout: moving from develop to main
+[33mf1be1e7[m HEAD@{36}: checkout: moving from main to develop
+[33m84eaf9e[m HEAD@{37}: merge develop: Merge made by the 'recursive' strategy.
+[33m5741a4f[m HEAD@{38}: checkout: moving from develop to main
+[33mf1be1e7[m HEAD@{39}: commit: adding to the layout index page
+[33m3f962e8[m HEAD@{40}: commit: added margin on index layout
+[33m9069d12[m HEAD@{41}: checkout: moving from main to develop
+[33m5741a4f[m HEAD@{42}: merge develop: Merge made by the 'recursive' strategy.
+[33m3bfed44[m HEAD@{43}: checkout: moving from develop to main
+[33m9069d12[m HEAD@{44}: commit: started working on the layouts
+[33m31cdac3[m HEAD@{45}: checkout: moving from main to develop
+[33m3bfed44[m HEAD@{46}: merge develop: Merge made by the 'recursive' strategy.
+[33mbc432ee[m HEAD@{47}: checkout: moving from develop to main
+[33m31cdac3[m HEAD@{48}: commit: added error fixing container
+[33m8cce7cb[m HEAD@{49}: checkout: moving from main to develop
+[33mbc432ee[m HEAD@{50}: merge develop: Merge made by the 'recursive' strategy.
+[33m760d3cb[m HEAD@{51}: checkout: moving from develop to main
+[33m8cce7cb[m HEAD@{52}: checkout: moving from main to develop
+[33m760d3cb[m HEAD@{53}: commit: adding to main branch
+[33m07c478a[m HEAD@{54}: checkout: moving from develop to main
+[33m8cce7cb[m HEAD@{55}: commit: adding to develop branch
+[33m07c478a[m HEAD@{56}: checkout: moving from main to develop
+[33m07c478a[m HEAD@{57}: commit: adding changes
+[33m5bf8e0e[m HEAD@{58}: commit: added some changes
+[33mf3f3f66[m HEAD@{59}: commit: added changes
+[33m83f93dd[m HEAD@{60}: commit: added
+[33m4c8e4c7[m HEAD@{61}: Branch: renamed refs/heads/main to refs/heads/main
+[33m4c8e4c7[m HEAD@{63}: Branch: renamed refs/heads/master to refs/heads/main
+[33m4c8e4c7[m HEAD@{65}: commit: first commit
+[33mfe97297[m HEAD@{66}: commit: changes
+[33m2aaf95c[m HEAD@{67}: reset: moving to master
+[33m2aaf95c[m HEAD@{68}: commit: pushing changes
+[33m1bf4658[m HEAD@{69}: commit: made added poarts to nav
+[33m4889931[m HEAD@{70}: commit: making multi layer
+[33meda0832[m HEAD@{71}: commit: added
+[33m8fa61fc[m HEAD@{72}: commit (initial): adding new front end
