@@ -34,7 +34,7 @@ const Home = (props) => {
              
             </div>
           </div>
-          <div className={style.grid5}>
+          <div className={style.grid5Main}>
           <div className={style.buttonContainer} >
           <FontAwesomeIcon className={style.arrowDown}
           icon={faChevronDown} 
