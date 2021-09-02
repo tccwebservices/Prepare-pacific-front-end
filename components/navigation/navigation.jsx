@@ -24,18 +24,12 @@ export default function Navigation(props) {
     const showmegaNav = () => setmegaNav(!megaNav);
 
 
-
     return (
         <>
             {/* <OverlayNav showOverlay={shownavBar}/> */}
             {/* className={ navOverlay ? `${style.overlayActive}` : `${style.overlay} */}
             {/* About overlayNAv //////////////////  */}
-            <div className={style.alertStripe}>
-                <p className={style.alertTitle}>
-                    ALERT
-                </p>
-
-            </div>
+           
             <div className={navOverlay ? `${style.overlayActive}` : `${style.overlay}`}>
                 <a className={style.closebtn}
                     onClick={shownavOverlay}>&times;</a>
@@ -60,6 +54,12 @@ export default function Navigation(props) {
                 </div>
             </div>
             {/* ////////////////////////////////////////// */}
+           
+            <div className={style.alertStripe}>
+                <p className={style.alertTitle}>
+                    ALERT
+                </p>
+            </div>
             <nav className={style.navbarContainer}>
                 <div className={style.logocontainer}>
                     <img src="https://via.placeholder.com/80/#808080
