@@ -49,7 +49,7 @@
   ); */
   height: 65px;
   /* padding-top: 10px; */
-  z-index: 6;
+  z-index: 2;
 }
 
 .alertTitle {
@@ -252,12 +252,11 @@
 
 .overlay {
   opacity: 0;
-
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translatey(-100%);
-  transition: 0.5s;
+  transform: translatey(100%);
+  transition: 0.2s;
   height: 100%;
   width: 100%;
   /* display: none; */

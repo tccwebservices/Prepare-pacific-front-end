@@ -1,7 +1,15 @@
 /* Body Grid Layout */
 
-.mainWrapper {
+.sectionsConatiner {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-padding-top: 175px;
+  height: 100vh;
+}
+
+.sectionWrapper {
   display: grid;
+  scroll-snap-align: center;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   /* grid-auto-rows: minmax(100px, auto); */
@@ -33,24 +41,46 @@ sticky NAV and alert) */
 .contentContainerMain {
   display: grid;
   width: 100%;
-  height: 82vh;
+  height: 80vh;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
-  margin-top: 100px;
+  margin-top: 110px;
   /*  A function taking two parameters, min and max.*/
   /* If max < min, then max is ignored and minmax(min,max) is treated as min */
   grid-auto-rows: minmax(300px, auto);
   z-index: 2;
 }
 
+.grid2Main {
+  margin-top: 40px;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+  height: 56vh;
+}
+
+.grid3Main {
+  margin-top: 40px;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+  height: 56vh;
+}
+
 /* containers for the rest of the sections */
 .contentContainer {
   display: grid;
   width: 100%;
-  height: 80vh;
+  height: 78vh;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  /* margin-top: 100px; */
+  margin-top: 0;
   /*  A function taking two parameters, min and max.*/
   /* If max < min, then max is ignored and minmax(min,max) is treated as min */
   grid-auto-rows: minmax(300px, auto);
@@ -87,7 +117,7 @@ sticky NAV and alert) */
   justify-content: center;
   color: black;
   z-index: 2;
-  height: 58vh;
+  height: 56vh;
 }
 
 .grid3 {
@@ -98,7 +128,7 @@ sticky NAV and alert) */
   justify-content: center;
   color: black;
   z-index: 2;
-  height: 58vh;
+  height: 56vh;
 }
 
 .grid4 {
@@ -150,7 +180,7 @@ sticky NAV and alert) */
 .contentContainerA {
   display: grid;
   width: 100%;
-  height: 80vh;
+  height: 78vh;
   grid-template-columns: repeat(5, 1fr);
   gap: 2px;
   /* margin-top: 100px; */
@@ -251,8 +281,8 @@ sticky NAV and alert) */
   grid-row-start: 2;
   grid-row-end: 3;
   border: 1px solid black;
-  height: 16vh;
-  transform: translateY(14vh);
+  height: 14vh;
+  transform: translateY(16vh);
 }
 
 /* arrow for brown buttons //////////////////// */
