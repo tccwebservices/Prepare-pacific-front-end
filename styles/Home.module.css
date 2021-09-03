@@ -1,0 +1,416 @@
+/* Body Grid Layout */
+
+.mainWrapper {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  /* grid-auto-rows: minmax(100px, auto); */
+}
+
+/* Hero */
+
+.family__Image {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-image: url("../images/FAMILY-2_JD02810.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+}
+
+.hero__Overlay {
+  background-color: rgb(238, 149, 15, 0.93);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* contentContainer for the first section (had to be pushed down for 
+sticky NAV and alert) */
+.contentContainerMain {
+  display: grid;
+  width: 100%;
+  height: 82vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  margin-top: 100px;
+  /*  A function taking two parameters, min and max.*/
+  /* If max < min, then max is ignored and minmax(min,max) is treated as min */
+  grid-auto-rows: minmax(300px, auto);
+  z-index: 2;
+}
+
+/* containers for the rest of the sections */
+.contentContainer {
+  display: grid;
+  width: 100%;
+  height: 80vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  /* margin-top: 100px; */
+  /*  A function taking two parameters, min and max.*/
+  /* If max < min, then max is ignored and minmax(min,max) is treated as min */
+  grid-auto-rows: minmax(300px, auto);
+  z-index: 2;
+}
+
+/* grid layouts for section 1 & 2  */
+.grid1 {
+  /* background: #444; */
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: black;
+  z-index: 2;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.leftPattern {
+  background-color: #555;
+  width: 170px;
+  height: 98%;
+}
+
+.grid2 {
+  margin-top: 40px;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+  height: 58vh;
+}
+
+.grid3 {
+  margin-top: 40px;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+  height: 58vh;
+}
+
+.grid4 {
+  margin-top: 40px;
+  margin-right: 80px;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: black;
+  z-index: 2;
+}
+
+.scrollDiv {
+  background-color: #555;
+  width: 46px;
+  height: 98%;
+}
+.grid5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid #555;
+  height: 180px;
+  transform: translateY(120px);
+}
+/* bottom grid for main section /////////*/
+.grid5Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid #555;
+  height: 200px;
+  transform: translateY(100px);
+}
+/* grid layout for section 3,4,5, */
+
+.contentContainerA {
+  display: grid;
+  width: 100%;
+  height: 80vh;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  /* margin-top: 100px; */
+  /*  A function taking two parameters, min and max.*/
+  /* If max < min, then max is ignored and minmax(min,max) is treated as min */
+  grid-auto-rows: minmax(300px, auto);
+  z-index: 2;
+}
+
+.grid1A {
+  /* background: #444; */
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: black;
+  z-index: 2;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.leftPatternA {
+  background-color: rgb(238, 22, 22);
+  width: 170px;
+  height: 98%;
+}
+
+.grid2A {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: 40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+  height: 60vh;
+}
+
+.grid3A {
+  margin-top: 40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+  height: 60vh;
+}
+
+.grid4A {
+  margin-top: 40px;
+  /* margin-right: 80px; */
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+  height: 60vh;
+}
+
+.grid5A {
+  margin-top: 40px;
+  margin-right: 80px;
+  /* margin-left: 80px; */
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: black;
+  z-index: 2;
+}
+
+.scrollDiv {
+  background-color: #555;
+  width: 46px;
+  height: 98%;
+}
+.grid6A {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid black;
+  height: 16vh;
+  transform: translateY(14vh);
+}
+
+/* arrow for brown buttons //////////////////// */
+.arrowDown {
+  color: rgb(85, 43, 9);
+  /* -webkit-transform: rotate(45deg); */
+  margin-bottom: 15px;
+  /* -webkit-animation: bounce 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+    both; */
+  animation: bounce 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.brownButton {
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(85, 43, 9);
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.brownButton:hover {
+  color: rgb(226, 155, 48);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+.brownButton:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+/* section2- WHITE/////////////////// */
+
+.hero__Overlay2 {
+  background-color: rgba(109, 69, 128, 0.932);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* White arrows */
+.arrowDown2 {
+  color: white;
+  /* -webkit-transform: rotate(45deg); */
+  margin-bottom: 15px;
+  /* -webkit-animation: bounce 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+    both; */
+  animation: bounce 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+.whiteButton {
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(92, 59, 107, 0.932);
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.whiteButton:hover {
+  /* color: rgb(226, 155, 48); */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+.whiteButton:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+/* section3 -WHITE//////////////////////////////////// */
+
+.family__Image3 {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  height: 92vh;
+}
+
+.hero__Overlay3 {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* section4 -BLUE //////////////////////////////////////// */
+
+.hero__Overlay4 {
+  background-color: rgba(48, 129, 206, 0.932);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* section5- GREY//////////////////////////////////// */
+
+.testingStation__Image {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-image: url("../images/Covid19_testingStation.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+}
+
+.hero__Overlay5 {
+  background-color: rgba(80, 86, 92, 0.932);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
