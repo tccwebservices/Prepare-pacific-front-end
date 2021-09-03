@@ -1,7 +1,15 @@
 /* Body Grid Layout */
 
-.mainWrapper {
+.sectionsConatiner {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-padding-top: 175px;
+  height: 100vh;
+}
+
+.sectionWrapper {
   display: grid;
+  scroll-snap-align: center;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   /* grid-auto-rows: minmax(100px, auto); */
