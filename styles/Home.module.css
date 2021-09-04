@@ -38,7 +38,7 @@
 }
 
 .hero__Overlay {
-  background-color: rgb(238, 149, 15, 0.93);
+  background-color: rgb(255, 158, 24, 0.93);
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   width: 100%;
@@ -62,9 +62,40 @@ sticky NAV and alert) */
   z-index: 2;
 }
 
+.pattern {
+  height: 75vh;
+  /* width: 200px; */
+}
+
 .grid2Main {
   margin-top: 40px;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  z-index: 2;
+  height: 56vh;
+  width: 120%;
+}
+
+.orangeSub {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.orangeSub2 {
+  padding-top: 0;
+  font-size: 12px;
+  color: white;
+}
+
+.grid3Main {
+  margin-top: 40px;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,15 +104,18 @@ sticky NAV and alert) */
   height: 56vh;
 }
 
-.grid3Main {
-  margin-top: 40px;
-  border: 1px solid #555;
+/* bottom grid for main section /////////*/
+.grid5Main {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  z-index: 2;
-  height: 56vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  /* border: 1px solid #555; */
+  height: 200px;
+  transform: translateY(100px);
 }
 
 /* containers for the rest of the sections */
@@ -104,7 +138,7 @@ sticky NAV and alert) */
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 3;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -115,14 +149,13 @@ sticky NAV and alert) */
 }
 
 .leftPattern {
-  background-color: #555;
-  width: 170px;
+  width: 200px;
   height: 98%;
 }
 
 .grid2 {
   margin-top: 40px;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,9 +164,60 @@ sticky NAV and alert) */
   height: 56vh;
 }
 
+/* purple section contents /////////////// */
+.purpleContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.purpleTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  line-height: 0.9;
+}
+
+.purpleSectionButton {
+  border-radius: 40px;
+  background-color: white;
+  color: #74598f;
+  border: none;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.subParagraph {
+  margin-top: 10px;
+  line-height: 1;
+  color: white;
+  font-weight: 500;
+}
+
+.subParagraph2 {
+  margin-top: 10px;
+  line-height: 1;
+  color: white;
+}
+
+.orangeButton {
+  border-radius: 40px;
+  background-color: #ff9e18;
+  color: #74598f;
+  border: none;
+  font-size: 15px;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.orangePartTitle {
+  color: orange;
+}
 .grid3 {
   margin-top: 40px;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,7 +232,7 @@ sticky NAV and alert) */
   grid-column-start: 4;
   grid-row-start: 1;
   grid-row-end: 3;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -169,23 +253,10 @@ sticky NAV and alert) */
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: 1px solid #555;
   height: 180px;
   transform: translateY(120px);
 }
-/* bottom grid for main section /////////*/
-.grid5Main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  border: 1px solid #555;
-  height: 200px;
-  transform: translateY(100px);
-}
+
 /* grid layout for section 3,4,5, */
 
 .contentContainerA {
@@ -361,7 +432,7 @@ sticky NAV and alert) */
 /* section2- WHITE/////////////////// */
 
 .hero__Overlay2 {
-  background-color: rgba(109, 69, 128, 0.932);
+  background-color: rgba(116, 89, 143, 0.932);
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   width: 100%;
