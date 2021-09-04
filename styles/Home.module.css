@@ -58,7 +58,7 @@ sticky NAV and alert) */
 
 .grid2Main {
   margin-top: 40px;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -66,11 +66,25 @@ sticky NAV and alert) */
   color: black;
   z-index: 2;
   height: 56vh;
+  width: 120%;
+}
+
+.orangeSub {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.orangeSub2 {
+  padding-top: 0;
+  font-size: 12px;
+  color: white;
 }
 
 .grid3Main {
   margin-top: 40px;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,7 +102,7 @@ sticky NAV and alert) */
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   height: 200px;
   transform: translateY(100px);
 }
@@ -113,7 +127,7 @@ sticky NAV and alert) */
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 3;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -130,7 +144,7 @@ sticky NAV and alert) */
 
 .grid2 {
   margin-top: 40px;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,9 +153,60 @@ sticky NAV and alert) */
   height: 56vh;
 }
 
+/* purple section contents /////////////// */
+.purpleContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.purpleTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  line-height: 0.9;
+}
+
+.purpleSectionButton {
+  border-radius: 40px;
+  background-color: white;
+  color: #74598f;
+  border: none;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.subParagraph {
+  margin-top: 10px;
+  line-height: 1;
+  color: white;
+  font-weight: 500;
+}
+
+.subParagraph2 {
+  margin-top: 10px;
+  line-height: 1;
+  color: white;
+}
+
+.orangeButton {
+  border-radius: 40px;
+  background-color: #ff9e18;
+  color: #74598f;
+  border: none;
+  font-size: 15px;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.orangePartTitle {
+  color: orange;
+}
 .grid3 {
   margin-top: 40px;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +221,7 @@ sticky NAV and alert) */
   grid-column-start: 4;
   grid-row-start: 1;
   grid-row-end: 3;
-  border: 1px solid #555;
+  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -177,7 +242,6 @@ sticky NAV and alert) */
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: 1px solid #555;
   height: 180px;
   transform: translateY(120px);
 }
