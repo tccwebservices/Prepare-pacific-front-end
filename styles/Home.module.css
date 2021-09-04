@@ -28,7 +28,7 @@
 }
 
 .hero__Overlay {
-  background-color: rgb(238, 149, 15, 0.93);
+  background-color: rgb(255, 158, 24, 0.93);
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   width: 100%;
@@ -51,11 +51,17 @@ sticky NAV and alert) */
   z-index: 2;
 }
 
+.pattern {
+  height: 75vh;
+  /* width: 200px; */
+}
+
 .grid2Main {
   margin-top: 40px;
   border: 1px solid #555;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   color: black;
   z-index: 2;
@@ -71,6 +77,20 @@ sticky NAV and alert) */
   color: black;
   z-index: 2;
   height: 56vh;
+}
+
+/* bottom grid for main section /////////*/
+.grid5Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid #555;
+  height: 200px;
+  transform: translateY(100px);
 }
 
 /* containers for the rest of the sections */
@@ -104,8 +124,7 @@ sticky NAV and alert) */
 }
 
 .leftPattern {
-  background-color: #555;
-  width: 170px;
+  width: 200px;
   height: 98%;
 }
 
@@ -162,19 +181,7 @@ sticky NAV and alert) */
   height: 180px;
   transform: translateY(120px);
 }
-/* bottom grid for main section /////////*/
-.grid5Main {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  border: 1px solid #555;
-  height: 200px;
-  transform: translateY(100px);
-}
+
 /* grid layout for section 3,4,5, */
 
 .contentContainerA {
@@ -343,7 +350,7 @@ sticky NAV and alert) */
 /* section2- WHITE/////////////////// */
 
 .hero__Overlay2 {
-  background-color: rgba(109, 69, 128, 0.932);
+  background-color: rgba(116, 89, 143, 0.932);
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   width: 100%;

@@ -5,7 +5,7 @@ export default class CustomDocument extends Document {
     render(){
         return <Html>
             <Head>
-                
+            <link rel="stylesheet" href="https://use.typekit.net/pmh8dsl.css"/>
             </Head>
             <body>
                 <Main/>

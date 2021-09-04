@@ -2,14 +2,18 @@
 import axios from "axios";
 import fetch from 'isomorphic-unfetch'
 import Footer from "../components/footer/footer"
+import DotNav from "../components/dotNavigation/dotNav"
 // import the library
-import { library } from '@fortawesome/fontawesome-svg-core';
+// import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import your icons
 import { faChevronDown, faHighlighter } from '@fortawesome/free-solid-svg-icons';
-// import PatternBrown from "../assets/patternBrown.svg"
+import PatternBrown from "../assets/patternBrown.svg"
+import PatternOrange from "../assets/patternOrange.svg"
+import PatternWhite from "../assets/patternWhite.svg"
+import PatternPurple from "../assets/patternOrange.svg"
+
 import style from "../styles/Home.module.css"
-// style={{display:'flex', justifyContent:'center', margin:'20px'}}
 const Home = (props) => {
   //  console.log(props.movies)
   return (
@@ -23,17 +27,23 @@ const Home = (props) => {
         <div className={style.contentContainerMain}>
           <div className={style.grid1}>
           <div className={style.leftPattern}>
-         
+        <PatternBrown
+        className={style.pattern}
+        />
          </div>
           </div>
           <div className={style.grid2Main}>
-            contents
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
+           <h1 className={style.orangeTitle}> WELCOME TO PREPARE PACIFIC </h1>
+           <p> 
+           Bula Vinaka, Fakaalofa Lahi Atu, Fakatalofa Atu, Halo 
+            Olaketa, Kia Orana, Mālō e Lelei, Mālō Nī, Noa’ia, Talofa 
+            Lava, Taloha Ni, Tēnā Koutou Katoa.
+           </p>
           </div>
           <div className={style.grid3Main}>Picture</div>
           <div className={style.grid4}>
-            <div className={style.scrollDiv}>
-             
+            <div className="">
+              <DotNav/>
             </div>
           </div>
           <div className={style.grid5Main}>
@@ -55,7 +65,10 @@ const Home = (props) => {
       <div className={style.hero__Overlay2}>
         <div className={style.contentContainer}>
           <div className={style.grid1}>
-          <div className={style.leftPattern}>
+          <div>
+            <PatternOrange
+            className={style.pattern}
+            />
          </div>
           </div>
           <div className={style.grid2}>
@@ -87,7 +100,8 @@ const Home = (props) => {
       <div className={style.hero__Overlay3}>
         <div className={style.contentContainerA}>
           <div className={style.grid1A}>
-          <div className={style.leftPatternA}>
+          <div>
+          <PatternPurple className={style.pattern}/>
          </div>
           </div>
           <div className={style.grid2A}>
@@ -120,7 +134,8 @@ const Home = (props) => {
       <div className={style.hero__Overlay4}>
         <div className={style.contentContainer}>
           <div className={style.grid1}>
-          <div className={style.leftPattern}>
+          <div>
+          <PatternWhite className={style.pattern}/>
          </div>
           </div>
           <div className={style.grid2}>

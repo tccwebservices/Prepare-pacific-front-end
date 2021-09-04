@@ -1,4 +1,4 @@
-import style from "./dotNaviagtion.module.css"
+import style from "./dotNav.module.css"
 
 const DotNavigation = () => {
     return (
