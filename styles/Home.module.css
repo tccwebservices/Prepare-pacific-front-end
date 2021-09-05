@@ -268,7 +268,6 @@ sticky NAV and alert) */
 }
 
 .scrollDiv {
-  background-color: #555;
   width: 46px;
   height: 98%;
 }
@@ -374,11 +373,6 @@ sticky NAV and alert) */
   z-index: 2;
 }
 
-.scrollDiv {
-  background-color: #555;
-  width: 46px;
-  height: 98%;
-}
 .grid6A {
   display: flex;
   flex-direction: column;
@@ -557,7 +551,7 @@ sticky NAV and alert) */
   padding-left: 20px;
   padding-right: 20px;
   color: rgba(92, 59, 107, 0.932);
-  border: none;
+
   font-size: 12px;
   font-weight: 700;
   transition: all 0.2s ease-in-out;
@@ -608,7 +602,7 @@ sticky NAV and alert) */
 .testingStation__Image {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  background-image: url("../images/Covid19_testingStation.png");
+  background-image: url("../images/preparepacific_bg_contact_section.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -622,4 +616,28 @@ sticky NAV and alert) */
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+.greyBox1 {
+  border: solid white 2px;
+  padding: 10px;
+  height: 55%;
+  width: 460px;
+  color: white;
+}
+
+.greyBox1Title {
+  color: #ff9e18;
+}
+
+.greyWhiteButton {
+  color: #ff9e18;
+  border-radius: 100px;
+  padding: 18px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border: white solid 2px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

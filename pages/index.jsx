@@ -177,8 +177,8 @@ const Home = (props) => {
             />
           <div className={style.purpleBox}>
          
-               <h3 className={style.purpleBoxTitle}> VACCINATION 
-                ROLLOUT RESOURCE</h3>
+               <h4 className={style.purpleBoxTitle}> VACCINATION 
+                ROLLOUT RESOURCE</h4>
                 <p>
                   We want to provide you with information 
                   to help you and your family to prepare for 
@@ -203,8 +203,8 @@ const Home = (props) => {
               quality={75}
             />
               <div className={style.orangeBox}>
-                <h3 className={style.orangeBoxTitle}> VACCINATION 
-                  ROLLOUT RESOURCE</h3>
+                <h4 className={style.orangeBoxTitle}> VACCINATION 
+                  ROLLOUT RESOURCE</h4>
                   <p>
                   We want to provide you with information 
                   to help you and your family to prepare for 
@@ -235,8 +235,8 @@ const Home = (props) => {
          
           <div className={style.brownBox}>
         
-                <h3  className={style.brownBoxTitle}> VACCINATION 
-                  ROLLOUT RESOURCE</h3>
+                <h4 className={style.brownBoxTitle}> VACCINATION 
+                  ROLLOUT RESOURCE</h4>
                   <p>
                   We want to provide you with information 
                   to help you and your family to prepare for 
@@ -257,11 +257,10 @@ const Home = (props) => {
             </div>
           </div>
           <div className={style.grid6A}>
-          <div className={style.buttonContainer} >
-          
-          <FontAwesomeIcon className={style.arrowDown}
-          icon={faChevronDown} 
-          />
+          <div className={style.buttonContainer}>
+            <FontAwesomeIcon className={style.arrowDown}
+            icon={faChevronDown} 
+            />
           <button className={style.brownButton}>NEW HEALTHLINE</button>
           </div>
           </div>
@@ -280,10 +279,9 @@ const Home = (props) => {
          </div>
           </div>
           <div className={style.grid2}>
-            content
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
+           
           </div>
-          <div className={style.grid3}>Picture</div>
+          <div className={style.grid3}></div>
           <div className={style.grid4}>
             <div className={style.scrollDiv}>
              
@@ -314,11 +312,34 @@ const Home = (props) => {
          </div> */}
           </div>
           <div className={style.grid2A}>
-            contentsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-           Grid 1
+            <div className={style.greyBox1}>
+              <h4 className={style.greyBox1Title}> CONTACT WITH <br/>
+              US BY EMAIL</h4>
+           <p>We want to provide you with information 
+            to help you and your family to prepare for 
+            when it’s your turn to be vaccinated.</p>
+            <button className={style.greyWhiteButton}>GET IN TOUCH</button>
+            </div>
           </div>
-          <div className={style.grid3A}>grid2</div>
-          <div className={style.grid4A}>grid3</div>
+          <div className={style.grid3A}>
+          <div className={style.greyBox1}>
+              <h4 className={style.greyBox1Title}> HELP US <br/>IMPROVE OUR WEBSITE</h4>
+           <p>We want to provide you with information 
+            to help you and your family to prepare for 
+            when it’s your turn to be vaccinated.</p>
+            <button className={style.greyWhiteButton}>GET IN TOUCH</button>
+            </div>
+          </div>
+          <div className={style.grid4A}>
+          <div className={style.greyBox1}>
+              <h4 className={style.greyBox1Title}> JOIN US<br/> ON FACEBOOK</h4>
+           <p>We want to provide you with information 
+            to help you and your family to prepare for 
+            when it’s your turn to be vaccinated.</p>
+            <button className={style.greyWhiteButton}>GET IN TOUCH</button>
+            </div>
+
+          </div>
           <div className={style.grid5A}>
             <div className={style.scrollDiv}>
              
@@ -327,10 +348,6 @@ const Home = (props) => {
           <div className={style.grid6A}>
           <div className={style.buttonContainer} >
           
-          <FontAwesomeIcon className={style.arrowDown}
-          icon={faChevronDown} 
-          />
-          <button className={style.brownButton}>NEW HEALTHLINE</button>
           </div>
           </div>
         </div>

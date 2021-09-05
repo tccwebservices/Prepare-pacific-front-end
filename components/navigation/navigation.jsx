@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import style from './navigation.module.css';
+import Logo from "../../assets/preparePacificLogo.svg";
 
 // import  "../styles/navigation.module.css";
 // as = what you would liek your link to look like
@@ -61,15 +62,15 @@ export default function Navigation(props) {
                 </p>
             </div>
             <nav className={style.navbarContainer}>
-                <div className={style.logocontainer}>
-                    <img src="https://via.placeholder.com/80/#808080
-C/O https://placeholder.com//808080 ?Text=Digital.com
-C/O https://placeholder.com/" alt="place holder" />
+            <Logo
+                    className ={style.prepareLogo}
+                    />
+            <div className={style.logoContainer}>
+               
                 </div>
                 <div className={style.navContainer}>
-
                     <div className={style.navBarItems}>
-
+                   
                         <li className={style.links}
                             key={props.navigation[0].id}>
                             <div className={style.aboutButton}
