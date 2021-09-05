@@ -318,7 +318,7 @@ const Home = (props) => {
            <p>We want to provide you with information 
             to help you and your family to prepare for 
             when it’s your turn to be vaccinated.</p>
-            <button className={style.greyWhiteButton}>GET IN TOUCH</button>
+            <button className={style.greyWhiteButton}>MESSAGE NOW</button>
             </div>
           </div>
           <div className={style.grid3A}>
@@ -336,7 +336,7 @@ const Home = (props) => {
            <p>We want to provide you with information 
             to help you and your family to prepare for 
             when it’s your turn to be vaccinated.</p>
-            <button className={style.greyWhiteButton}>GET IN TOUCH</button>
+            <button className={style.greyWhiteButton}>JOIN NOW</button>
             </div>
 
           </div>
