@@ -1,4 +1,5 @@
 
+import Image from 'next/image'
 import axios from "axios";
 import fetch from 'isomorphic-unfetch'
 import Footer from "../components/footer/footer"
@@ -13,6 +14,7 @@ import PatternOrange from "../assets/patternOrange.svg"
 import PatternWhite from "../assets/patternWhite.svg"
 import PatternPurple from "../assets/patternOrange.svg"
 import Grandpa from "../images/granpaChair.png";
+import Grandma from "../images/grandmaStanding.png";
 
 
 import style from "../styles/Home.module.css"
@@ -105,7 +107,30 @@ const Home = (props) => {
           
           </div>
           <div className={style.grid3}>
-            {/* <Grandpa/> */}
+            <div className={style.grandmaGradpaBox}>
+
+            <div className={style.grandpaBox}>
+              <Image  className={style.grandpa}
+              src={Grandpa} 
+              alt="me" 
+              width={500}
+              height={500}
+              layout="fixed"
+              quality={65}
+              />
+            </div>
+            <div className={style.grandmaBox}>
+            <Image className={style.grandma} 
+              src={Grandma} 
+              alt="me" 
+              width={500}
+              height={500}
+              layout="fixed"
+              quality={65}
+            />
+            </div>
+            </div>
+           
           </div>
           <div className={style.grid4}>
             <div>

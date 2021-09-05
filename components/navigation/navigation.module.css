@@ -1,8 +1,7 @@
 /* About Overlay Content */
 
-.aboutSection { 
-  
-  position:relative;
+.aboutSection {
+  position: relative;
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,8 +9,8 @@
   width: 60vh;
   margin-top: 10%;
   margin-bottom: 10%;
-  padding-top:60px;
-  padding-right:20px;
+  padding-top: 60px;
+  padding-right: 20px;
   padding-left: 20px;
   align-items: center;
 }
@@ -23,7 +22,7 @@
 
 .aboutSection__Title {
   float: left;
-  margin:0;
+  margin: 0;
   word-wrap: break-word;
 }
 
@@ -32,7 +31,6 @@
   background-repeat: no-repeat;
   justify-content: center;
 }
-
 
 /* alert level sticky banner//////////////// */
 .alertStripe {
