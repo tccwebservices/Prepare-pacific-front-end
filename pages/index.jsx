@@ -12,9 +12,14 @@ import { faChevronDown, faHighlighter } from '@fortawesome/free-solid-svg-icons'
 import PatternBrown from "../assets/patternBrown.svg"
 import PatternOrange from "../assets/patternOrange.svg"
 import PatternWhite from "../assets/patternWhite.svg"
-import PatternPurple from "../assets/patternOrange.svg"
+import PatternPurple from "../assets/patternPurple.svg"
 import Grandpa from "../images/granpaChair.png";
 import Grandma from "../images/grandmaStanding.png";
+import Vaccination from "../images/vaccination.png";
+import StrongLady from "../images/strongLady.png";
+import Family from "../images/family.png";
+
+
 
 
 import style from "../styles/Home.module.css"
@@ -156,18 +161,96 @@ const Home = (props) => {
       <div className={style.hero__Overlay3}>
         <div className={style.contentContainerA}>
           <div className={style.grid1A}>
-            <div></div>
-
+            
           <div>
           <PatternPurple className={style.pattern}/>
          </div>
           </div>
           <div className={style.grid2A}>
-            content
-           Grid 1
+          <Image className={style.vaccination}
+              src={Vaccination} 
+              alt="me" 
+              width={300}
+              height={300}
+              layout="fixed"
+              quality={65}
+            />
+          <div className={style.purpleBox}>
+         
+               <h3 className={style.purpleBoxTitle}> VACCINATION 
+                ROLLOUT RESOURCE</h3>
+                <p>
+                  We want to provide you with information 
+                  to help you and your family to prepare for 
+                  when it’s your turn to be vaccinated
+                </p>
+                <p>
+                  The New Zealand Government is making 
+                  sure the groups who are most at risk of 
+                  COVID-19 will receive the vaccine first. 
+                  You can get vaccinated now if you are
+                </p>
+                <button className={style.purpleWhiteButton}>LEARN MORE</button>
+            </div>
           </div>
-          <div className={style.grid3A}>grid2</div>
-          <div className={style.grid4A}>grid3</div>
+          <div className={style.grid3A}>
+          <Image className={style.family} 
+              src={Family} 
+              alt="me" 
+              width={300}
+              height={300}
+              layout="fixed"
+              quality={75}
+            />
+              <div className={style.orangeBox}>
+                <h3 className={style.orangeBoxTitle}> VACCINATION 
+                  ROLLOUT RESOURCE</h3>
+                  <p>
+                  We want to provide you with information 
+                  to help you and your family to prepare for 
+                  when it’s your turn to be vaccinated
+                  </p>
+                  <p>
+                  The New Zealand Government is making 
+                  sure the groups who are most at risk of 
+                  COVID-19 will receive the vaccine first. 
+                  You can get vaccinated now if you are
+                  </p>
+                  <button className={style.purpleOrangeButton}>READ MORE</button>
+              </div>
+            </div>
+          
+          <div className={style.grid4A}>
+            <div className={style.strongladyBox}>
+            <Image  
+              src={StrongLady} 
+              alt="me" 
+              width={285}
+              height={285}
+              layout="fixed"
+              quality={75}
+            />
+
+            </div>
+         
+          <div className={style.brownBox}>
+        
+                <h3  className={style.brownBoxTitle}> VACCINATION 
+                  ROLLOUT RESOURCE</h3>
+                  <p>
+                  We want to provide you with information 
+                  to help you and your family to prepare for 
+                  when it’s your turn to be vaccinated
+                  </p>
+                  <p>
+                  The New Zealand Government is making 
+                  sure the groups who are most at risk of 
+                  COVID-19 will receive the vaccine first. 
+                  You can get vaccinated now if you are
+                  </p>
+                  <button className={style.purpleOrangeButton}>READ MORE</button>
+              </div>
+          </div>
           <div className={style.grid5A}>
             <div className={style.scrollDiv}>
              
