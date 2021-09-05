@@ -156,7 +156,7 @@ const Home = (props) => {
       <div className={style.hero__Overlay3}>
         <div className={style.contentContainerA}>
           <div className={style.grid1A}>
-            <div className={}></div>
+            <div></div>
 
           <div>
           <PatternPurple className={style.pattern}/>
