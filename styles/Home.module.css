@@ -478,6 +478,7 @@ sticky NAV and alert) */
   height: 55%;
   width: 460px;
   background-color: #ff9e18;
+  color: white;
 }
 
 .orangeBoxTitle {
@@ -494,6 +495,7 @@ sticky NAV and alert) */
   height: 55%;
   width: 460px;
   background-color: #503629;
+  color: white;
 }
 
 .brownBoxTitle {
