@@ -86,7 +86,7 @@ const Home = (props) => {
           <div className={style.grid2}>
           <div className={style.purpleContentContainer}>
             <h1 className={style.purpleTitle}>NEW PACIFIC COVID VACCINATION 
-              <p ClassName={style.orangePartTitle}>HEALTHLINE</p>
+              <p className={style.orangePartTitle}>HEALTHLINE</p>
             </h1>
             <button className={style.purpleSectionButton}>
               0800 21 12 21
@@ -156,6 +156,8 @@ const Home = (props) => {
       <div className={style.hero__Overlay3}>
         <div className={style.contentContainerA}>
           <div className={style.grid1A}>
+            <div className={}></div>
+
           <div>
           <PatternPurple className={style.pattern}/>
          </div>
