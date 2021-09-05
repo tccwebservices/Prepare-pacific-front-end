@@ -27,6 +27,16 @@
   height: 92vh;
 }
 
+.foodbank__Image {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-image: url("../images/FAMILY-2_JD02810.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+}
+
 .hero__Overlay {
   background-color: rgb(255, 158, 24, 0.93);
   grid-column: 1 / -1;
@@ -35,6 +45,7 @@
   height: 100%;
   z-index: 1;
 }
+
 
 /* contentContainer for the first section (had to be pushed down for 
 sticky NAV and alert) */
@@ -304,6 +315,7 @@ sticky NAV and alert) */
   margin-top: 40px;
 }
 
+
 .leftPatternA {
   background-color: rgb(238, 22, 22);
   width: 170px;
@@ -324,6 +336,7 @@ sticky NAV and alert) */
   height: 60vh;
 }
 
+
 .grid3A {
   margin-top: 40px;
   border: 1px solid black;
@@ -334,6 +347,7 @@ sticky NAV and alert) */
   z-index: 2;
   height: 60vh;
 }
+
 
 .grid4A {
   margin-top: 40px;
@@ -350,6 +364,7 @@ sticky NAV and alert) */
   height: 60vh;
 }
 
+
 .grid5A {
   margin-top: 40px;
   margin-right: 80px;
@@ -365,6 +380,8 @@ sticky NAV and alert) */
   color: black;
   z-index: 2;
 }
+
+
 
 .scrollDiv {
   background-color: #555;
@@ -383,6 +400,7 @@ sticky NAV and alert) */
   height: 14vh;
   transform: translateY(16vh);
 }
+
 
 /* arrow for brown buttons //////////////////// */
 .arrowDown {

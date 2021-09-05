@@ -40,7 +40,7 @@ export default function Navigation(props) {
                           <img src="https://via.placeholder.com/100" alt="place holder" />
                             
                     </div>
-                        <div><h1>ABOUT PREPARE PACIFIC. CHANGE. LESSGO. WE ONZ </h1></div>
+                        <div><h1>ABOUT PREPARE PACIFIC.</h1></div>
                         <div><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
                         </div>
