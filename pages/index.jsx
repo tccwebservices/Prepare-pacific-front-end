@@ -18,7 +18,9 @@ import Grandma from "../images/grandmaStanding.png";
 import Vaccination from "../images/vaccination.png";
 import StrongLady from "../images/strongLady.png";
 import Family from "../images/family.png";
-
+import TrianglePattern from "../assets/triangles.svg";
+import WeavingPattern from "../assets/weaving.svg";
+import MountainsPattern from "../assets/mountains.svg";
 
 
 
@@ -42,10 +44,13 @@ const Home = (props) => {
          </div>
           </div>
           <div className={style.grid2Main}>
-           <h1 className={style.orangeTitle}> 
+            
+            <h1> 
             WELCOME TO
             PREPARE PACIFIC 
            </h1>
+           
+          
            <p className={style.orangeSub}> 
            Bula Vinaka, Fakaalofa Lahi Atu, Fakatalofa Atu, Halo 
             Olaketa, Kia Orana, Mālō e Lelei, Mālō Nī, Noa’ia, Talofa 
@@ -313,6 +318,13 @@ const Home = (props) => {
           </div>
           <div className={style.grid2A}>
             <div className={style.greyBox1}>
+              <div className={style.PatternBox}>
+              <TrianglePattern 
+              height="200"
+              weight="200"
+              />
+              </div>
+             
               <h4 className={style.greyBox1Title}> CONTACT WITH <br/>
               US BY EMAIL</h4>
            <p>We want to provide you with information 
@@ -323,6 +335,12 @@ const Home = (props) => {
           </div>
           <div className={style.grid3A}>
           <div className={style.greyBox1}>
+          <div className={style.PatternBox}>
+              <WeavingPattern 
+              height="200"
+              weight="200"
+              />
+              </div>
               <h4 className={style.greyBox1Title}> HELP US <br/>IMPROVE OUR WEBSITE</h4>
            <p>We want to provide you with information 
             to help you and your family to prepare for 
@@ -332,6 +350,12 @@ const Home = (props) => {
           </div>
           <div className={style.grid4A}>
           <div className={style.greyBox1}>
+          <div className={style.PatternBox}>
+              <MountainsPattern 
+              height="200"
+              weight="200"
+              />
+              </div>
               <h4 className={style.greyBox1Title}> JOIN US<br/> ON FACEBOOK</h4>
            <p>We want to provide you with information 
             to help you and your family to prepare for 
