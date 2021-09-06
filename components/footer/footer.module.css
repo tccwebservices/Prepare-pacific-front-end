@@ -11,7 +11,40 @@
 .gridContainer {
   display: flex;
   justify-content: space-between;
-  height: 20vh;
+  height: 100px;
+  /* align-items: center; */
+}
+
+.ttcLogoContainer {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 80px;
+}
+
+.ttccopyTitle {
+  color: #5b6e7f;
+}
+
+.logosContainer {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 80px;
+}
+
+.logoBox {
+  padding: 5px 10px;
+  height: 60px;
+  border-left: 1px solid #5b6e7f;
+}
+
+.logoSpec {
+  height: 50px;
 }
 
 @media only screen and (max-width: 600px) {
