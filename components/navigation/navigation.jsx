@@ -12,7 +12,7 @@ import Logo from "../../assets/preparePacificLogo.svg";
 export default function Navigation(props) {
     // used to grab from strapi API
     //  console.log(props.navigation[9].slug)
-    console.log(props.navigation[0].title)
+    console.log(props.navigation[0].slug)
     console.log(props.navigation)
     const [navBar, setNavBar] = useState(false);
     // open close function.
@@ -62,9 +62,10 @@ export default function Navigation(props) {
                 </p>
             </div>
             <nav className={style.navbarContainer}>
-            <Logo
-                    className ={style.prepareLogo}
-                    />
+            <Link href="/">
+            <Logo className ={style.prepareLogo}/>
+            </Link>
+            
             <div className={style.logoContainer}>
                
                 </div>
@@ -72,33 +73,33 @@ export default function Navigation(props) {
                     <div className={style.navBarItems}>
                    
                         <li className={style.links}
-                            key={props.navigation[0].id}>
+                            key={props.navigation[3].id}>
                             <div className={style.aboutButton}
                                 onClick={shownavOverlay}>
-                                {props.navigation[0].title}
+                                {props.navigation[3].title}
                             </div>
                         </li>
                         <li className={style.links}>
                             <Link
 
-                                href={props.navigation[1].slug}
+                                href={props.navigation[4].slug}
                             >
-                                {props.navigation[1].title}
+                                {props.navigation[4].title}
                             </Link>
                         </li>
                         <li className={style.links}>
                             <Link
 
-                                href={props.navigation[2].slug}
+                                href={props.navigation[5].slug}
                             >
-                                {props.navigation[2].title}
+                                {props.navigation[5].title}
                             </Link>
                         </li>
 
                         <li className={style.dropbtn}>
                             {/* Mega-nav  layout  */}
                             <div className="">
-                                {props.navigation[3].title}
+                                {props.navigation[2].title}
                                 <i className="fa fa-caret-down"></i>
                                 <div className="">
 
@@ -110,8 +111,13 @@ export default function Navigation(props) {
                                             <div className={style.row}>
                                                 <div className={style.column}>
                                                     <h3 className={style.header}>Vaccinations & COVID-19 Info</h3>
-                                                    <a href="#">Link 1</a>
-                                                    <a href="#">Link 2</a>
+                                                    {/*  */}
+                                                    <Link href="/resources/[slug]" as={`/resources${props.navigation[2].slug}`} >
+                                                        {props.navigation[2].title} 
+                                                    </Link>
+                                                    <Link href="/resources/[slug]" as={`/resources${props.navigation[0].slug}`} >
+                                                        {props.navigation[0].title} 
+                                                    </Link>
                                                     <a href="#">Link 3</a>
                                                 </div>
                                                 <div className={style.column}>
