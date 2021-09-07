@@ -99,7 +99,7 @@ export default function Navigation(props) {
                         <li className={style.dropbtn}>
                             {/* Mega-nav  layout  */}
                             <div className="">
-                                {props.navigation[2].title}
+                                {props.navigation[1].title}
                                 <i className="fa fa-caret-down"></i>
                                 <div className="">
 
