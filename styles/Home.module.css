@@ -79,14 +79,19 @@ sticky NAV and alert) */
   width: 700px;
 }
 
-.orangeSub {
-  display: flex;
-  justify-content: flex-start;
-  font-weight: 600;
-  margin-bottom: 0;
+.orangerHeader {
+  color: #503629;
 }
 
-.orangeSub2 {
+.orangeSubHeader {
+  /* display: flex;
+  justify-content: flex-start;
+  font-weight: 700;
+  margin-bottom: 0; */
+  color: #503629;
+}
+
+.orangeContent {
   padding-top: 0;
   font-size: 12px;
   color: white;
@@ -135,18 +140,16 @@ sticky NAV and alert) */
 
 /* grid layouts for section 1 & 2  */
 .grid1 {
-  /* background: #444; */
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 3;
-  /* border: 1px solid #555; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
   color: black;
   z-index: 2;
   margin-left: 80px;
-  margin-top: 40px;
+  margin-top: 55px;
 }
 
 .leftPattern {
@@ -165,10 +168,33 @@ sticky NAV and alert) */
   height: 56vh;
 }
 
-/* purple section contents /////////////// */
+/* Section 2 - purple section /////////////// */
+
+.family__Image2 {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-image: url("../images/preparepacific_bg_healthline_section.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+}
+
+.hero__Overlay2 {
+  background-color: rgba(116, 89, 143, 0.932);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
 .purpleContentContainer {
   display: flex;
   flex-direction: column;
+  padding: 10px 50px 18px;
+  margin: 20px 0px 20px;
+  margin-top: 10vh;
 }
 
 .grandmaGradpaBox {
@@ -195,15 +221,11 @@ sticky NAV and alert) */
   transform: translateY(100px);
 }
 
-.grandpaBox > img {
-  /* transform: translateY(150px); */
-}
-
 .purpleTitle {
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 700;
-  color: white;
-  line-height: 0.9;
+  color: #fff;
+  line-height: 40px;
 }
 
 .purpleSectionButton {
@@ -311,7 +333,7 @@ sticky NAV and alert) */
   color: black;
   z-index: 2;
   margin-left: 80px;
-  margin-top: 40px;
+  margin-top: 55px;
 }
 
 .leftPatternA {
@@ -388,12 +410,8 @@ sticky NAV and alert) */
 
 /* arrow for brown buttons //////////////////// */
 .arrowDown {
-  color: rgb(85, 43, 9);
-  /* -webkit-transform: rotate(45deg); */
-  margin-bottom: 15px;
-  /* -webkit-animation: bounce 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    both; */
-  animation: bounce 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  color: 503629;
+  animation: bounce 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
 @keyframes bounce {
@@ -401,56 +419,73 @@ sticky NAV and alert) */
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  100% {
+  /* 40% {
     -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
+    transform: translateY(-30px);
+  } */
+
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
+/* Major buttons /////////////////////////// */
 
 .buttonContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .brownButton {
-  border-radius: 40px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  border-radius: 100px;
+  padding: 18px 25px;
   background-color: rgb(85, 43, 9);
   color: white;
   border: none;
-  font-size: 12px;
-  font-weight: 700;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 16px;
+  font-weight: 500;
+  /* transition: all 0.2s ease-in-out; */
+  transition: opacity 0.5s;
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .brownButton:hover {
   color: rgb(226, 155, 48);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  transition: all ease 0.5s;
 }
 
-.brownButton:active {
+/* .brownButton:active {
   box-shadow: 0 5px #666;
-  transform: translateY(3px);
+  transform: translateY(1px);
+} */
+
+.whiteButton {
+  border-radius: 100px;
+  padding: 18px 25px;
+  background-color: #ffff;
+  color: #74598f;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  /* transition: all 0.2s ease-in-out; */
+  transition: opacity 0.5s;
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* section2- WHITE/////////////////// */
-
-.hero__Overlay2 {
-  background-color: rgba(116, 89, 143, 0.932);
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+.whiteButton:hover {
+  /* color: rgb(226, 155, 48); */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: all ease 0.5s;
 }
+
+/* section3- WHITE/////////////////// */
 
 .purpleBox {
   padding: 10px;
@@ -478,6 +513,7 @@ sticky NAV and alert) */
 
 .orangeBoxTitle {
   color: #503629;
+  text-transform: uppercase;
 }
 
 .family {
@@ -495,6 +531,7 @@ sticky NAV and alert) */
 
 .brownBoxTitle {
   color: white;
+  text-transform: uppercase;
 }
 
 .strongladyBox {
@@ -505,13 +542,14 @@ sticky NAV and alert) */
 .purpleWhiteButton {
   border-radius: 100px;
   padding: 18px 25px;
-  background-color: white;
-  color: #74598f;
+  background-color: rgb(85, 43, 9);
+  color: white;
   border: none;
   font-size: 16px;
   font-weight: 500;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* transition: all 0.2s ease-in-out; */
+  transition: opacity 0.5s;
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .purpleOrangeButton {
@@ -528,11 +566,7 @@ sticky NAV and alert) */
 /* White arrows */
 .arrowDown2 {
   color: white;
-  /* -webkit-transform: rotate(45deg); */
-  margin-bottom: 15px;
-  /* -webkit-animation: bounce 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
-    both; */
-  animation: bounce 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  animation: bounce 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 
 @keyframes bounce {
@@ -540,36 +574,22 @@ sticky NAV and alert) */
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  100% {
+  /* 40% {
     -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
+    transform: translateY(-30px);
+  } */
+
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
+/* //////////////////////////////////////// */
 
-.whiteButton {
-  border-radius: 40px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: rgba(92, 59, 107, 0.932);
-
-  font-size: 12px;
-  font-weight: 700;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.whiteButton:hover {
-  /* color: rgb(226, 155, 48); */
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  transform: scale(1.1);
-}
-
-.whiteButton:active {
+/* .whiteButton:active {
   box-shadow: 0 5px #666;
   transform: translateY(3px);
-}
+} */
 
 /* section3 -WHITE//////////////////////////////////// */
 

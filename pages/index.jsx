@@ -44,19 +44,16 @@ const Home = (props) => {
          </div>
           </div>
           <div className={style.grid2Main}>
-            
-            <h1> 
+            <h1 className={style.orangerHeader}> 
             WELCOME TO
             PREPARE PACIFIC 
            </h1>
-           
-          
-           <p className={style.orangeSub}> 
+           <h4 className={style.orangeSubHeader}> 
            Bula Vinaka, Fakaalofa Lahi Atu, Fakatalofa Atu, Halo 
             Olaketa, Kia Orana, Mālō e Lelei, Mālō Nī, Noa’ia, Talofa 
             Lava, Taloha Ni, Tēnā Koutou Katoa.
-           </p>
-           <p className={style.orangeSub2}>
+           </h4>
+           <p className={style.orangeContent}>
            This website has been set up to help get information out to our Pacific communities to 
           help us in the battle against coronavirus. Information, updates and advice are available in 
           Pacific languages
@@ -82,7 +79,7 @@ const Home = (props) => {
     </section>
     {/* section2 - PURPLE */}
     <section id="section" className={style.sectionWrapper}>
-      <div className={style.family__Image}>
+      <div className={style.family__Image2}>
       </div>
       <div className={style.hero__Overlay2}>
         <div className={style.contentContainer}>
@@ -101,9 +98,9 @@ const Home = (props) => {
             <button className={style.purpleSectionButton}>
               0800 21 12 21
             </button>
-            <p className={style.subParagraph}>Pacific peoples living in Auckland aged 12 and over are now 
+            <h4 className={style.subParagraph}>Pacific peoples living in Auckland aged 12 and over are now 
             ible along with their household bubble to get their free 
-            COVID-19 vaccination</p>
+            COVID-19 vaccination</h4>
             <p  className={style.subParagraph2}>
             To make it easier, we’ve set up a new number for Pacific peoples to get 
             help with your booking. It’s simple and free, just call 0800 21 12 21, 
@@ -208,8 +205,7 @@ const Home = (props) => {
               quality={75}
             />
               <div className={style.orangeBox}>
-                <h4 className={style.orangeBoxTitle}> VACCINATION 
-                  ROLLOUT RESOURCE</h4>
+                <h4 className={style.orangeBoxTitle}> VIEW SUPPORT OFFERED</h4>
                   <p>
                   We want to provide you with information 
                   to help you and your family to prepare for 

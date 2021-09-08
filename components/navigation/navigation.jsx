@@ -57,9 +57,13 @@ export default function Navigation(props) {
             {/* ////////////////////////////////////////// */}
            
             <div className={style.alertStripe}>
-                <p className={style.alertTitle}>
-                    ALERT
-                </p>
+                <div className={style.alertTitle}>
+                    <div className={style.firstPart}> We are now in</div>
+                    <div className={style.alertLevel}> 
+                    LEVEL 4 
+                   </div> 
+                   <div className={style.clickPart}> Click here for more details</div>
+                </div>
             </div>
             <nav className={style.navbarContainer}>
             <Link href="/">
