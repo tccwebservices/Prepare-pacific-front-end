@@ -2705,7 +2705,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_vaccination_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../images/vaccination.png */ "./images/vaccination.png");
 /* harmony import */ var _images_strongLady_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../images/strongLady.png */ "./images/strongLady.png");
 /* harmony import */ var _images_family_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../images/family.png */ "./images/family.png");
-<<<<<<< Updated upstream
 /* harmony import */ var _assets_triangles_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/triangles.svg */ "./assets/triangles.svg");
 /* harmony import */ var _assets_weaving_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/weaving.svg */ "./assets/weaving.svg");
 /* harmony import */ var _assets_mountains_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/mountains.svg */ "./assets/mountains.svg");
@@ -2713,14 +2712,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_Home_module_css__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_20__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! react/jsx-dev-runtime */ "react/jsx-dev-runtime");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_19__);
-var _jsxFileName = "C:\\Users\\Andrew.DESKTOP-A21Q4LO\\Desktop\\Websites\\Prepare-pacific-website\\Prepare-pacific-front-end\\pages\\index.jsx";
-=======
-/* harmony import */ var _styles_Home_module_css__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../styles/Home.module.css */ "./styles/Home.module.css");
-/* harmony import */ var _styles_Home_module_css__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react/jsx-dev-runtime */ "react/jsx-dev-runtime");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_16__);
 var _jsxFileName = "C:\\Users\\fred\\Documents\\TCC\\Prepare Pacific\\Website\\Development\\current\\pages\\index.jsx";
->>>>>>> Stashed changes
 
 
 

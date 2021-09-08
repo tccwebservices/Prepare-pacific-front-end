@@ -61,11 +61,9 @@ const Home = (props) => {
       <div className={fstyle.rowContent}>COLUMN B</div>
       <div className={fstyle.rowContent}>COLUMN C</div>
 
-    </div>
-   
-   
-    
+    </div>  
     </section>
+
     </div>
 
 
