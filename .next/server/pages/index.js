@@ -1633,7 +1633,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dotNav_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dotNav_module_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "react/jsx-dev-runtime");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\fred\\Documents\\TCC\\Prepare Pacific\\Website\\Development\\current\\components\\dotNavigation\\dotNav.jsx";
+var _jsxFileName = "C:\\Users\\Andrew.DESKTOP-A21Q4LO\\Desktop\\Websites\\Prepare-pacific-website\\Prepare-pacific-front-end\\components\\dotNavigation\\dotNav.jsx";
 
 
 
@@ -1700,7 +1700,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_TCC_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/TCC.svg */ "./assets/TCC.svg");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-dev-runtime */ "react/jsx-dev-runtime");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\Users\\fred\\Documents\\TCC\\Prepare Pacific\\Website\\Development\\current\\components\\footer\\footer.jsx";
+var _jsxFileName = "C:\\Users\\Andrew.DESKTOP-A21Q4LO\\Desktop\\Websites\\Prepare-pacific-website\\Prepare-pacific-front-end\\components\\footer\\footer.jsx";
 
 
 
@@ -2712,7 +2712,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_Home_module_css__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_styles_Home_module_css__WEBPACK_IMPORTED_MODULE_20__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! react/jsx-dev-runtime */ "react/jsx-dev-runtime");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_19__);
+<<<<<<< HEAD
 var _jsxFileName = "C:\\Users\\fred\\Documents\\TCC\\Prepare Pacific\\Website\\Development\\current\\pages\\index.jsx";
+=======
+var _jsxFileName = "C:\\Users\\Andrew.DESKTOP-A21Q4LO\\Desktop\\Websites\\Prepare-pacific-website\\Prepare-pacific-front-end\\pages\\index.jsx";
+>>>>>>> 12dbf3594e1c5975972eac6df8b658c6efd62f7d
 
 
 

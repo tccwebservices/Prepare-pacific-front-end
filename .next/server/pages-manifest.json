@@ -3,6 +3,10 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/": "pages/index.js",
+<<<<<<< HEAD
   "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
   "/resources": "pages/resources.js"
+=======
+  "/resources/[slug]": "pages/resources/[slug].js"
+>>>>>>> 12dbf3594e1c5975972eac6df8b658c6efd62f7d
 }
