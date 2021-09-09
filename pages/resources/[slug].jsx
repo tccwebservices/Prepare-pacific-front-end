@@ -8,66 +8,66 @@ export default function Resource(props){
     console.log(props.resources)
     return ( 
         <>
-        <div className={style.pageContainer}>
-       {/* section- ORANGE */}
-    <div className={style.sectionsConatiner}> 
-    <section id="section" className={style.sectionWrapper}> {/* HEADING */}
-    {/* <div className={style.contentLabel__Background}> Background</div><background></background> */}
-    <div className={style.contentContainerA}>
-        <div className={style.contentMain__Header}>
+  <div className={style.pageContainer}>
+ {/* HEADING */}
+ <div className={style.bannerContainer}>
+        <div className={style.bannerBox}>
         <div className={style.contentMain__HeaderLogo}>
-                          <img src="https://via.placeholder.com/150" alt="place holder" />
-                            
-                    </div>
-          <h1>
-              {props.resources.MajorTitle}
-          </h1>
+            <img src="https://via.placeholder.com/150" alt="place holder" />    
+        </div>
+          <h1 className={style.majortTitle}>{props.resources.MajorTitle}</h1>
+        </div>
     </div>
-      
-    {/* CONTENT SECTION HERE */}
-      <div className={style.rowTitle}><b>AUCKLAND WIDE</b></div>
-      <div className={style.rowSubTitle}><b>Food Banks - Updated 26 August 2021</b>
-          <div className={style.buttonContainer} >
-            <button className={style.whiteButton}>DOWNLOAD</button>
-          </div>
-      </div>
-      <div className={style.rowContent}>COLUMN A</div>
-      <div className={style.rowContent}>COLUMN B</div>
-      <div className={style.rowContent}>COLUMN C</div>
-      
-    {/* CONTENT SECTION HERE */}
-      <div className={style.rowTitle}><b>WEST AUCKLAND</b></div>
-      <div className={style.rowSubTitle}><b>Food Banks - Updated 26 August 2021</b>
-          <div className={style.buttonContainer} >
-            <button className={style.whiteButton}>DOWNLOAD</button>
-          </div>
-      </div>
-      <div className={style.rowContent}>COLUMN A</div>
-      <div className={style.rowContent}>COLUMN B</div>
-      <div className={style.rowContent}>COLUMN C</div>
 
-    {/* CONTENT SECTION HERE */}
-      <div className={style.rowTitle}><b>CENTRAL AUCKLAND</b></div>
-      <div className={style.rowSubTitle}><b>Food Banks - Updated 26 August 2021</b>
-          <div className={style.buttonContainer} >
-            <button className={style.whiteButton}>DOWNLOAD</button>
-          </div>
-      </div>
-      <div className={style.rowContent}>COLUMN A</div>
-      <div className={style.rowContent}>COLUMN B</div>
-      <div className={style.rowContent}>COLUMN C</div>
-
-    </div>
+      <div className={style.mainContainer}> 
    
+      {/* conatiner with colum content */}
+    {/* CONTENT SECTION HERE */}
+    <div className={style.firstContainer}>
+    <h4 className={style.Header1}>VACCINATION ROLLOUT INFORMATION</h4>
+    <div className={style.container1}>
+     <h4 className={style.Subheadercolumn}>
+      Booklets
+    </h4>
+    <h4 className={style.Subheadercolumn}>
+    Poster 
+    </h4>
+    <div className={style.contentColumn}>
+     
+      Community Hanbook
+      <div className={style.buttonBox}>
+      <button className={style.contentButton}>Download</button>
+      </div>
+    
+   
+    </div>
+    <div className={style.contentColumn}>
+    New Healthline Phone Number
+    <div className={style.buttonBox}>
+      <button className={style.contentButton}>Download</button>
+      </div>
+    </div>
+    <div className={style.contentColumn}>
+    Interfaith Booklet
+    <div className={style.buttonBox}>
+      <button className={style.contentButton}>Download</button>
+      </div>
+    </div>
+    <div className={style.contentColumn}>
+    Interfaith Bookle
+    <div className={style.buttonBox}>
+      <button className={style.contentButton}>Download</button>
+      </div>
+    </div>
+  </div>
+
+    </div>
    
     
-    </section>
+   
     </div>
-
-        </div>
-     
-       
-        </>
+  </div>
+    </>
      );
 }
 
@@ -99,7 +99,6 @@ export async function getServerSideProps(context){
     //  const response = await fetch(`${publicRuntimeConfig.API_URL}/Resources?slug=${slug}`)
     //  const res = await res.json()
    
-  
     return {
       props: {
       //  since we are now making anAPi call based n filtering from the slug() it only has one result in the array 

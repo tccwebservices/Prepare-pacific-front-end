@@ -55,23 +55,20 @@ export default function Navigation(props) {
                 </div>
             </div>
             {/* ////////////////////////////////////////// */}
-           
             <div className={style.alertStripe}>
                 <div className={style.alertTitle}>
                     <div className={style.firstPart}> We are now in</div>
                     <div className={style.alertLevel}> 
                     LEVEL 4 
                    </div> 
-                   <div className={style.clickPart}> Click here for more details</div>
+                   <div className={style.clickPart}>Click here for more details</div>
                 </div>
             </div>
             <nav className={style.navbarContainer}>
             <Link href="/">
             <Logo className ={style.prepareLogo}/>
             </Link>
-            
             <div className={style.logoContainer}>
-               
                 </div>
                 <div className={style.navContainer}>
                     <div className={style.navBarItems}>

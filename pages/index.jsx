@@ -21,15 +21,15 @@ import Family from "../images/family.png";
 import TrianglePattern from "../assets/triangles.svg";
 import WeavingPattern from "../assets/weaving.svg";
 import MountainsPattern from "../assets/mountains.svg";
-
-
-
 import style from "../styles/Home.module.css"
+
+
+
 const Home = (props) => {
   //  console.log(props.movies)
   return (
     <>
-    {/* section- ORANGE */}
+    {/* section- ORANGE ////////////////////////////////////*/}
     <div className={style.sectionsConatiner}>
     <section id ="section"className={style.sectionWrapper}>
       <div className={style.family__Image}>
@@ -236,8 +236,7 @@ const Home = (props) => {
          
           <div className={style.brownBox}>
         
-                <h4 className={style.brownBoxTitle}> VACCINATION 
-                  ROLLOUT RESOURCE</h4>
+                <h4 className={style.brownBoxTitle}> </h4>
                   <p>
                   We want to provide you with information 
                   to help you and your family to prepare for 
