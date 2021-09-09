@@ -2,6 +2,10 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
+<<<<<<< HEAD
   "/resources/[slug]": "pages/resources/[slug].js",
+=======
+  "/foodbank": "pages/foodbank.js",
+>>>>>>> bda9986b3eaded86354772f880b7fe455ede3c19
   "/": "pages/index.js"
 }
