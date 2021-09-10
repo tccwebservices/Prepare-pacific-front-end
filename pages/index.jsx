@@ -23,15 +23,13 @@ import WeavingPattern from "../assets/weaving.svg";
 import MountainsPattern from "../assets/mountains.svg";
 import style from "../styles/Home.module.css"
 
-
-
 const Home = (props) => {
   //  console.log(props.movies)
   return (
     <>
     {/* section- ORANGE ////////////////////////////////////*/}
     <div className={style.sectionsConatiner}>
-    <section id ="section"className={style.sectionWrapper}>
+    <section id="section" className={style.sectionWrapper}>
       <div className={style.family__Image}>
       </div>
       <div className={style.hero__Overlay}>
@@ -46,7 +44,7 @@ const Home = (props) => {
           <div className={style.grid2Main}>
             <h1 className={style.orangerHeader}> 
             WELCOME TO
-            PREPARE PACIFIC 
+            PREPARE PACIFIC
            </h1>
            <h4 className={style.orangeSubHeader}> 
            Bula Vinaka, Fakaalofa Lahi Atu, Fakatalofa Atu, Halo 

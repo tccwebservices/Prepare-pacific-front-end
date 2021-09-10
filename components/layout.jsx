@@ -5,8 +5,7 @@ import Navigation from "../components/navigation/navigation"
 // import fetch from 'isomorphic-unfetch';
 
 const Layout = ({ children, navigation }) => {
-
-    console.log(navigation)
+//  console.log(navigation)
     return (
         <>
             {/* grabbing the API dats via props from _app.js then sending them into navigation */}

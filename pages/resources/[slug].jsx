@@ -3,7 +3,8 @@ import getConfig from 'next/config'
 import axios from "axios"
 // import fetch from 'isomorphic-unfetch'
 import style from "./slug.module.css";
- 
+
+
 export default function Resource(props){
     console.log(props.resources)
     return ( 
@@ -18,50 +19,172 @@ export default function Resource(props){
           <h1 className={style.majortTitle}>{props.resources.MajorTitle}</h1>
         </div>
     </div>
-
-      <div className={style.mainContainer}> 
+  <div className={style.mainContainer}> 
    
       {/* conatiner with colum content */}
-    {/* CONTENT SECTION HERE */}
+    {/* VAccination rollout INformation section////////////////////////////// */}
     <div className={style.firstContainer}>
     <h4 className={style.Header1}>VACCINATION ROLLOUT INFORMATION</h4>
     <div className={style.container1}>
-     <h4 className={style.Subheadercolumn}>
-      Booklets
-    </h4>
-    <h4 className={style.Subheadercolumn}>
-    Poster 
-    </h4>
-    <div className={style.contentColumn}>
-     
-      Community Hanbook
-      <div className={style.buttonBox}>
-      <button className={style.contentButton}>Download</button>
-      </div>
     
-   
+      <h4 className={style.Subheadercolumn}>
+        BOOKLET
+      </h4>
+      <h4 className={style.Subheadercolumn}>
+        POSTER
+      </h4>
+      <div className={style.contentColumn}>
+      Community Hanbook
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
     </div>
     <div className={style.contentColumn}>
     New Healthline Phone Number
-    <div className={style.buttonBox}>
-      <button className={style.contentButton}>Download</button>
-      </div>
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
     </div>
     <div className={style.contentColumn}>
     Interfaith Booklet
-    <div className={style.buttonBox}>
-      <button className={style.contentButton}>Download</button>
-      </div>
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
     </div>
     <div className={style.contentColumn}>
-    Interfaith Bookle
-    <div className={style.buttonBox}>
-      <button className={style.contentButton}>Download</button>
-      </div>
+    Poster Number 2
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <div className={style.contentColumn}>
+    Poster Number 3
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <h4 className={style.Subheadercolumn}>
+        Flip Chart
+    </h4>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <div className={style.contentColumn}>
+    Flip Chart One
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <div className={style.contentColumn}>
+    Flip Chart Two
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <div className={style.contentColumn}>
+    Flip Chart Three
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+
+
+    
+    
+  </div>
+</div>
+
+{/* Covid-19 Information containe ///////////////////////////////////////// */}
+    <div className={style.firstContainer}>
+    <h4 className={style.Header2}>COVID-19 INFORMATION</h4>
+    <div className={style.container1}>
+    
+      <h4 className={style.Subheadercolumn}>
+        BOOKLET
+      </h4>
+      <h4 className={style.Subheadercolumn}>
+        POSTER
+      </h4>
+      <div className={style.contentColumn}>
+      Community Hanbook
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div className={style.contentColumn}>
+    New Healthline Phone Number
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div className={style.contentColumn}>
+    Interfaith Booklet
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div className={style.contentColumn}>
+    Poster Number 2
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <div className={style.contentColumn}>
+    Poster Number 3
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <h4 className={style.Subheadercolumn}>
+        Flip Chart
+    </h4>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <div className={style.contentColumn}>
+    Flip Chart One
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <div className={style.contentColumn}>
+    Flip Chart Two
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
+    </div>
+    <div>
+    {/* Empty grid for spacing */}
+    </div>
+    <div className={style.contentColumn}>
+    Flip Chart Three
+        <div className={style.buttonBox}>
+             <button className={style.contentButton}>Download</button>
+        </div>
     </div>
   </div>
-
-    </div>
+</div>
    
     
    

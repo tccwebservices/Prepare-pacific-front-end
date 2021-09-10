@@ -29,10 +29,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/foodbank": [
+    "/resources/[slug]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/foodbank.js"
+      "static/chunks/pages/resources/[slug].js"
     ]
   },
   "ampFirstPages": []

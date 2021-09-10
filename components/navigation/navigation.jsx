@@ -35,11 +35,9 @@ export default function Navigation(props) {
                 <a className={style.closebtn}
                     onClick={shownavOverlay}>&times;</a>
                 <div onClick={shownavOverlay} className={style.overlayContent}>
-                   
                     <section className={style.aboutSection}>
                     <div className={style.aboutSection__Logo}>
                           <img src="https://via.placeholder.com/100" alt="place holder" />
-                            
                     </div>
                         <div><h1>ABOUT PREPARE PACIFIC.</h1></div>
                         <div><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius</h2>
@@ -49,7 +47,6 @@ export default function Navigation(props) {
                     <section className={style.aboutSection}>
                     <div className={style.aboutSection__Image}>
                     <img src="https://via.placeholder.com/400" alt="place holder" />
-                    
                     </div>
                     </section>
                 </div>
