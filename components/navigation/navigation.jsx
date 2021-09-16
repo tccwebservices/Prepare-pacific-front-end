@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 // import CSS Stylesheet
-import style from './Navigation.module.css';
+import style from './navigation.module.css';
 
 // import Assets
 import Logo from "../../assets/preparePacificLogo.svg";
