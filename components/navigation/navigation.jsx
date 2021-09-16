@@ -1,7 +1,16 @@
+
+// import API
 import Link from 'next/link';
 import { useState } from 'react';
-import style from './navigation.module.css';
+
+// import CSS Stylesheet
+import style from './Navigation.module.css';
+
+// import Assets
 import Logo from "../../assets/preparePacificLogo.svg";
+
+// import Component
+// import AboutModal from "../About/aboutModal";
 
 // import  "../styles/navigation.module.css";
 // as = what you would liek your link to look like
@@ -31,40 +40,37 @@ export default function Navigation(props) {
             {/* className={ navOverlay ? `${style.overlayActive}` : `${style.overlay} */}
             {/* About overlayNAv //////////////////  */}
            
-            <div className={navOverlay ? `${style.overlayActive}` : `${style.overlay}`}>
-                <a className={style.closebtn}
-                    onClick={shownavOverlay}>&times;</a>
+            {/* <AboutModal /> */}
+            {/* <div className={navOverlay ? `${style.overlayActive}` : `${style.overlay}`}>
+                <a className={style.closebtn} onClick={shownavOverlay}>&times;</a>
                 <div onClick={shownavOverlay} className={style.overlayContent}>
-                    <section className={style.aboutSection}>
-                    <div className={style.aboutSection__Logo}>
-                          <img src="https://via.placeholder.com/100" alt="place holder" />
-                    </div>
-                        <div><h1>ABOUT PREPARE PACIFIC.</h1></div>
-                        <div><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius cum est aspernatur odio reprehenderit rem facere magni in dolores corrupti sunt harum facilis, quisquam quas maiores repellendus magnam officiis.</p>
-                        </div>
-                    </section>
-                    <section className={style.aboutSection}>
-                    <div className={style.aboutSection__Image}>
-                    <img src="https://via.placeholder.com/400" alt="place holder" />
-                    </div>
-                    </section>
+                
                 </div>
-            </div>
+                </div> */}
+
+
+
+
+            {/* HEADER SECTION */}
+            {/* Alert & Navigation goes here */}
             {/* ////////////////////////////////////////// */}
-            <div className={style.alertStripe}>
-                <div className={style.alertTitle}>
-                    <div className={style.firstPart}> We are now in</div>
-                    <div className={style.alertLevel}> 
-                    LEVEL 4 
-                   </div> 
-                   <div className={style.clickPart}>Click here for more details</div>
+
+            <header className={style.headerSection}>
+            {/* Alert Container */}
+                <div className={style.alertStripe}>
+                    <div className={style.alertTitle}>
+                        <div className={style.firstPart}> We are now in &nbsp; </div>
+                        <div className={style.alertLevel}>LEVEL 4. &nbsp; </div> 
+                        <div className={style.clickPart}>Click here for more details</div>
+                    </div> 
                 </div>
-            </div>
-            <nav className={style.navbarContainer}>
-            <Link href="/">
-            <Logo className ={style.prepareLogo}/>
-            </Link>
+
+            {/* Nav Container */}
+                <nav className={style.navbarContainer}>
+                    {/* Logo Container */}
+                    <Link href="/">
+                        <Logo className ={style.prepareLogo}/>
+                    </Link>
             <div className={style.logoContainer}>
                 </div>
                 <div className={style.navContainer}>
@@ -153,81 +159,11 @@ export default function Navigation(props) {
 
 
                 </div>
-            </nav>
+                </nav>
+            </header>
 
-
-            <div className={navBar ? `${style.responisveNavActive}` : `${style.responsiveNav}`} >
-                <div className={style.responsiveNavContainer}>
-                    <li
-                        className={style.responsiveLinks}
-                        key={props.navigation[0].id}
-                    >
-                        <div
-                            className={style.aboutButtonResponsive}
-                            onClick={shownavOverlay}
-                        >
-                            {props.navigation[0].title}
-                        </div>
-                    </li>
-                    <li className={style.responsiveLinks}>
-                        <Link
-                            href={props.navigation[1].slug}
-                        >
-                            {props.navigation[1].title}
-                        </Link>
-                    </li>
-                    <li className={style.responsiveLinks}>
-                        <Link
-                            href={props.navigation[2].slug}
-                        >
-                            {props.navigation[2].title}
-                        </Link>
-                    </li>
-
-                    <li onClick={showmegaNav}>
-                        <div className={style.resourceButton}>
-                            {props.navigation[3].title}
-                            <i className="fa fa-caret-down"></i>
-                        </div>
-                    </li>
-
-                    {/* Mega-nav  layout  */}
-                    <div className={megaNav ? `${style.dropbtnActive}` : `${style.dropdownContentResponsive}`}>
-                        <div className={style.header}>
-
-                        </div>
-                        <div className={style.columnContainerResponsive}>
-                            <div className={style.row}>
-                                <div className={style.columnResponsive}>
-                                    <h3 className={style.headerResponsive}>Vaccinations & COVID-19 Info</h3>
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
-                                </div>
-                                <div className={style.columnResponsive}>
-                                    <h3 className={style.headerResponsive}>Resources</h3>
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
-                                </div>
-                                <div className={style.columnResponsive}>
-                                    <h3 className={style.headerResponsive}>Talanoa Videos</h3>
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
-                                </div>
-                                <div className={style.columnLastResponsive}>
-                                    
-                                    {/* <div className={style.imgContainer}>
-        
-          </div> */}
-          
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/* Responsive NavBar */}
+           
         </>
     )
 

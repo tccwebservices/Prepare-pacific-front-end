@@ -25,9 +25,6 @@ function MyApp({ Component, pageProps, navigation }) {
       <Layout navigation={navigation}>
         <Component {...pageProps} />
       </Layout>
-
-
-
     </>
   )
 

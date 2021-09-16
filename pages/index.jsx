@@ -1,378 +1,341 @@
 
+// import API
 import Image from 'next/image'
 import axios from "axios";
 import fetch from 'isomorphic-unfetch'
+
+// import Components
 import Footer from "../components/footer/footer"
-import DotNav from "../components/dotNavigation/dotNav"
-// import the library
-// import { library } from '@fortawesome/fontawesome-svg-core';
+// import DotNav from "../components/dotNavigation/dotNav"
+
+// import the Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import your icons
+
+// import your Assets
 import { faChevronDown, faHighlighter } from '@fortawesome/free-solid-svg-icons';
 import PatternBrown from "../assets/patternBrown.svg"
 import PatternOrange from "../assets/patternOrange.svg"
 import PatternWhite from "../assets/patternWhite.svg"
 import PatternPurple from "../assets/patternPurple.svg"
-import Grandpa from "../images/granpaChair.png";
-import Grandma from "../images/grandmaStanding.png";
-import Vaccination from "../images/vaccination.png";
-import StrongLady from "../images/strongLady.png";
-import Family from "../images/family.png";
 import TrianglePattern from "../assets/triangles.svg";
 import WeavingPattern from "../assets/weaving.svg";
 import MountainsPattern from "../assets/mountains.svg";
+
+// import your Images
+import Grandparents from "../images/granparents.png";
+import Vaccination from "../images/vaccination.png";
+import StrongLady from "../images/strongLady.png";
+import Family from "../images/family.png";
+
+// import your Stylesheet
 import style from "../styles/Home.module.css"
 
 const Home = (props) => {
-  //  console.log(props.movies)
   return (
     <>
-    {/* section- ORANGE ////////////////////////////////////*/}
-    <div className={style.sectionsConatiner}>
-    <section id="section" className={style.sectionWrapper}>
-      <div className={style.family__Image}>
-      </div>
-      <div className={style.hero__Overlay}>
-        <div className={style.contentContainerMain}>
-          <div className={style.grid1}>
-          <div className={style.leftPattern}>
-        <PatternBrown
-        className={style.pattern}
-        />
-         </div>
-          </div>
-          <div className={style.grid2Main}>
-            <h1 className={style.orangerHeader}> 
-            WELCOME TO
-            PREPARE PACIFIC
-           </h1>
-           <h4 className={style.orangeSubHeader}> 
-           Bula Vinaka, Fakaalofa Lahi Atu, Fakatalofa Atu, Halo 
-            Olaketa, Kia Orana, Mālō e Lelei, Mālō Nī, Noa’ia, Talofa 
-            Lava, Taloha Ni, Tēnā Koutou Katoa.
-           </h4>
-           <p className={style.orangeContent}>
-           This website has been set up to help get information out to our Pacific communities to 
-          help us in the battle against coronavirus. Information, updates and advice are available in 
-          Pacific languages
-           </p>
-          </div>
-          <div className={style.grid3Main}></div>
-          <div className={style.grid4}>
-            <div className="">
-              <DotNav/>
+    
+    {/* Overall Section Container */}
+    <div className={style.sectionsContainer}>
+    
+      {/* Section One (.sectionOne) */}
+      <section id="sectionOne" className={`${style.sectionWrapper} ${style.sectionOne}`}>
+    
+        {/* Grid Container */}
+        <div className={style.gridContainer}>
+          
+          {/* Grid Section Column 1 */}
+          <div className={style.gridSections}>
+            <div className={style.flexContainer}>
+              <div className={style.pacificPattern}>
+              {/* <PatternBrown /> */}
+              </div>
             </div>
           </div>
-          <div className={style.grid5Main}>
-          <div className={style.buttonContainer} >
-          <FontAwesomeIcon className={style.arrowDown}
-          icon={faChevronDown} 
-          />
-          <button className={style.brownButton}>NEW HEALTHLINE</button>
-          </div>
-          </div>
-        </div>
-      </div>
-      <Footer/>
-    </section>
-    {/* section2 - PURPLE */}
-    <section id="section" className={style.sectionWrapper}>
-      <div className={style.family__Image2}>
-      </div>
-      <div className={style.hero__Overlay2}>
-        <div className={style.contentContainer}>
-          <div className={style.grid1}>
-          <div>
-            <PatternOrange
-            className={style.pattern}
-            />
-         </div>
-          </div>
-          <div className={style.grid2}>
-          <div className={style.purpleContentContainer}>
-            <h1 className={style.purpleTitle}>NEW PACIFIC COVID VACCINATION 
-              <p className={style.orangePartTitle}>HEALTHLINE</p>
-            </h1>
-            <button className={style.purpleSectionButton}>
-              0800 21 12 21
-            </button>
-            <h4 className={style.subParagraph}>Pacific peoples living in Auckland aged 12 and over are now 
-            ible along with their household bubble to get their free 
-            COVID-19 vaccination</h4>
-            <p  className={style.subParagraph2}>
-            To make it easier, we’ve set up a new number for Pacific peoples to get 
-            help with your booking. It’s simple and free, just call 0800 21 12 21, 
-            8am - 8pm, 7 days a week, to talk to a Pacific member of the Covid 
-            Vaccination Team to make a booking
-            </p>
-            <button className={style.orangeButton}>
-             VIEW RESOURCES
-            </button>
-         </div>
           
+          {/* Grid Section Column 2 */}
+          <div className={style.gridSections}>
+              
+              {/* Grid Section Container */}
+              <div className={style.gridTwoColumnContainer}>
+                <div className={style.gridColumn}>
+                  <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                      <h1>WELCOME TO PREPARE PACIFIC</h1>
+                      <h4>THESE ARE SUBHEADINGS</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className={style.gridColumn}>
+                <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
           </div>
-          <div className={style.grid3}>
-            <div className={style.grandmaGradpaBox}>
 
-            <div className={style.grandpaBox}>
-              <Image  className={style.grandpa}
-              src={Grandpa} 
-              alt="me" 
-              width={500}
-              height={500}
-              layout="fixed"
-              quality={65}
-              />
-            </div>
-            <div className={style.grandmaBox}>
-            <Image className={style.grandma} 
-              src={Grandma} 
-              alt="me" 
-              width={500}
-              height={500}
-              layout="fixed"
-              quality={65}
-            />
-            </div>
-            </div>
-           
-          </div>
-          <div className={style.grid4}>
-            <div>
-             
-            </div>
-          </div>
-          <div className={style.grid5}>
-          <div className={style.buttonContainer} >
-          
-          <FontAwesomeIcon className={style.arrowDown2}
-          icon={faChevronDown} 
-          />
-          <button className={style.whiteButton}>INFORMATION</button>
-          </div>
-          </div>
+          {/* Grid Section Column 3 */}
+          <div className={style.gridSections}></div>
         </div>
-      </div>
-    </section>
-    {/* section3 -WHITE */}
-    <section id="section" className={style.sectionWrapper}>
-      <div className={style.family__Image3}>
-      </div>
-      <div className={style.hero__Overlay3}>
-        <div className={style.contentContainerA}>
-          <div className={style.grid1A}>
-            
-          <div>
-          <PatternPurple className={style.pattern}/>
-         </div>
-          </div>
-          <div className={style.grid2A}>
-          <Image className={style.vaccination}
-              src={Vaccination} 
-              alt="me" 
-              width={300}
-              height={300}
-              layout="fixed"
-              quality={65}
-            />
-          <div className={style.purpleBox}>
-         
-               <h4 className={style.purpleBoxTitle}> VACCINATION 
-                ROLLOUT RESOURCE</h4>
-                <p>
-                  We want to provide you with information 
-                  to help you and your family to prepare for 
-                  when it’s your turn to be vaccinated
-                </p>
-                <p>
-                  The New Zealand Government is making 
-                  sure the groups who are most at risk of 
-                  COVID-19 will receive the vaccine first. 
-                  You can get vaccinated now if you are
-                </p>
-                <button className={style.purpleWhiteButton}>LEARN MORE</button>
-            </div>
-          </div>
-          <div className={style.grid3A}>
-          <Image className={style.family} 
-              src={Family} 
-              alt="me" 
-              width={300}
-              height={300}
-              layout="fixed"
-              quality={75}
-            />
-              <div className={style.orangeBox}>
-                <h4 className={style.orangeBoxTitle}> VIEW SUPPORT OFFERED</h4>
-                  <p>
-                  We want to provide you with information 
-                  to help you and your family to prepare for 
-                  when it’s your turn to be vaccinated
-                  </p>
-                  <p>
-                  The New Zealand Government is making 
-                  sure the groups who are most at risk of 
-                  COVID-19 will receive the vaccine first. 
-                  You can get vaccinated now if you are
-                  </p>
-                  <button className={style.purpleOrangeButton}>READ MORE</button>
-              </div>
-            </div>
-          
-          <div className={style.grid4A}>
-            <div className={style.strongladyBox}>
-            <Image  
-              src={StrongLady} 
-              alt="me" 
-              width={285}
-              height={285}
-              layout="fixed"
-              quality={75}
-            />
+      </section>
 
-            </div>
-         
-          <div className={style.brownBox}>
-        
-                <h4 className={style.brownBoxTitle}> </h4>
-                  <p>
-                  We want to provide you with information 
-                  to help you and your family to prepare for 
-                  when it’s your turn to be vaccinated
-                  </p>
-                  <p>
-                  The New Zealand Government is making 
-                  sure the groups who are most at risk of 
-                  COVID-19 will receive the vaccine first. 
-                  You can get vaccinated now if you are
-                  </p>
-                  <button className={style.purpleOrangeButton}>READ MORE</button>
-              </div>
-          </div>
-          <div className={style.grid5A}>
-            <div className={style.scrollDiv}>
-             
-            </div>
-          </div>
-          <div className={style.grid6A}>
-          <div className={style.buttonContainer}>
-            <FontAwesomeIcon className={style.arrowDown}
-            icon={faChevronDown} 
-            />
-          <button className={style.brownButton}>NEW HEALTHLINE</button>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-     {/* section4- BLUE */}
-    <section id="section" className={style.sectionWrapper}>
-      <div className={style.family__Image}>
-      </div>
-      <div className={style.hero__Overlay4}>
-        <div className={style.contentContainer}>
-          <div className={style.grid1}>
-          <div>
-          <PatternWhite className={style.pattern}/>
-         </div>
-          </div>
-          <div className={style.grid2}>
-           
-          </div>
-          <div className={style.grid3}></div>
-          <div className={style.grid4}>
-            <div className={style.scrollDiv}>
-             
-            </div>
-          </div>
-          <div className={style.grid5}>
-          <div className={style.buttonContainer} >
-          
-          <FontAwesomeIcon className={style.arrowDown2}
-          icon={faChevronDown} 
-          />
-          <button className={style.whiteButton}>GET IN TOUCH</button>
-          </div>
-          </div>
-        </div>
-      </div>
-     </section>
-     {/* section5 -GREY*/}
-     <section id="section" className={style.sectionWrapper}>
-       <div className={style.sectionWrapper}>
-       </div>
-      <div className={style.testingStation__Image}>
-      </div>
-      <div className={style.hero__Overlay5}>
-        <div className={style.contentContainerA}>
-          <div className={style.grid1A}>
-          {/* <div className={style.leftPatternA}>
-         </div> */}
-          </div>
-          <div className={style.grid2A}>
-            <div className={style.greyBox1}>
-              <div className={style.PatternBox}>
-              <TrianglePattern 
-              height="200"
-              weight="200"
-              />
-              </div>
-             
-              <h4 className={style.greyBox1Title}> CONTACT WITH <br/>
-              US BY EMAIL</h4>
-           <p>We want to provide you with information 
-            to help you and your family to prepare for 
-            when it’s your turn to be vaccinated.</p>
-            <button className={style.greyWhiteButton}>MESSAGE NOW</button>
-            </div>
-          </div>
-          <div className={style.grid3A}>
-          <div className={style.greyBox1}>
-          <div className={style.PatternBox}>
-              <WeavingPattern 
-              height="200"
-              weight="200"
-              />
-              </div>
-              <h4 className={style.greyBox1Title}> HELP US <br/>IMPROVE OUR WEBSITE</h4>
-           <p>We want to provide you with information 
-            to help you and your family to prepare for 
-            when it’s your turn to be vaccinated.</p>
-            <button className={style.greyWhiteButton}>GET IN TOUCH</button>
-            </div>
-          </div>
-          <div className={style.grid4A}>
-          <div className={style.greyBox1}>
-          <div className={style.PatternBox}>
-              <MountainsPattern 
-              height="200"
-              weight="200"
-              />
-              </div>
-              <h4 className={style.greyBox1Title}> JOIN US<br/> ON FACEBOOK</h4>
-           <p>We want to provide you with information 
-            to help you and your family to prepare for 
-            when it’s your turn to be vaccinated.</p>
-            <button className={style.greyWhiteButton}>JOIN NOW</button>
-            </div>
 
-          </div>
-          <div className={style.grid5A}>
-            <div className={style.scrollDiv}>
-             
+      {/* ///////////////////////// */}
+      {/* Section Two (.sectionTwo) */}
+      <section id="sectionTwo" className={`${style.sectionWrapper} ${style.sectionTwo}`}>
+        {/* Grid Container */}
+        <div className={style.gridContainer}>
+          
+          {/* Grid Section Column 1 */}
+          <div className={style.gridSections}>
+            <div className={style.flexContainer}>
+              <div className={style.pacificPattern}>
+              {/* <PatternBrown /> */}
+              </div>
             </div>
           </div>
-          <div className={style.grid6A}>
-          <div className={style.buttonContainer} >
           
+          {/* Grid Section Column 2 */}
+          <div className={style.gridSections}>
+              
+              {/* Grid Section "TWO COLUMN" Container */}
+              <div className={style.gridTwoColumnContainer}>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                  <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                      <h1>NEW PACIFIC COVID VACCINATION HEALTHLINE</h1>
+                      <h4>THESE ARE SUBHEADINGS</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      
+                      {/* Content Area Goes here */}
+                      <Image src={Grandparents} className={style.contentImages} />
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
           </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
+          {/* Grid Section Column 3 */}
+          <div className={style.gridSections}></div>
+        </div>
+      </section>
+
+
+      {/* ///////////////////////// */}
+      {/* Section Three (.sectionThree) */}
+      <section id="sectionThree" className={`${style.sectionWrapper} ${style.sectionThree}`}>
+        {/* Grid Container */}
+        <div className={style.gridContainer}>
+          
+          {/* Grid Section Column 1 */}
+          <div className={style.gridSections}>
+            <div className={style.flexContainer}>
+              <div className={style.pacificPattern}>
+              {/* <PatternBrown /> */}
+              </div>
+            </div>
+          </div>
+          
+          {/* Grid Section Column 2 */}
+          <div className={style.gridSections}>
+              
+              {/* Grid Section "THREE COLUMN" Container */}
+              <div className={style.gridThreeColumnContainer}>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                  <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                 <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      
+                      {/* Content Area Goes here */}
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    
+                    </div>
+                  </div>
+                </div>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                  <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+
+          {/* Grid Section Column 3 */}
+          <div className={style.gridSections}></div>
+        </div>
+      </section>
+
+
+      {/* ///////////////////////// */}
+      {/* Section Four (.sectionFour) */}
+      <section id="sectionFour" className={`${style.sectionWrapper} ${style.sectionFour}`}>
+         {/* Grid Container */}
+         <div className={style.gridContainer}>
+          
+          {/* Grid Section Column 1 */}
+          <div className={style.gridSections}>
+            <div className={style.flexContainer}>
+              <div className={style.pacificPattern}>
+              {/* <PatternBrown /> */}
+              </div>
+            </div>
+          </div>
+          
+          {/* Grid Section Column 2 */}
+          <div className={style.gridSections}>
+              
+              {/* Grid Section "TWO COLUMN" Container */}
+              <div className={style.gridTwoColumnContainer}>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                  <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+
+          {/* Grid Section Column 3 */}
+          <div className={style.gridSections}></div>
+        </div>
+      </section>
+
+
+      {/* ///////////////////////// */}
+      {/* Section Five (.sectionFive) */}
+      <section id="sectionFive" className={`${style.sectionWrapper} ${style.sectionFive}`}>
+         {/* Grid Container */}
+         <div className={style.gridContainer}>
+          
+          {/* Grid Section Column 1 */}
+          <div className={style.gridSections}>
+            <div className={style.flexContainer}>
+              <div className={style.pacificPattern}>
+              {/* <PatternBrown /> */}
+              </div>
+            </div>
+          </div>
+          
+          {/* Grid Section Column 2 */}
+          <div className={style.gridSections}>
+              
+              {/* Grid Section "THREE COLUMN" Container */}
+              <div className={style.gridThreeColumnContainer}>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                  <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                 <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      
+                      {/* Content Area Goes here */}
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    
+                    </div>
+                  </div>
+                </div>
+                {/* /// */}
+                <div className={style.gridColumn}>
+                  <div className={style.flexContainer}>
+                    <div className={style.flexContentContainer}>
+                      {/* Content Area Goes here */}
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere, nisi vitae porta vehicula, enim ipsum accumsan enim, sed molestie diam sem eget nisi. Etiam tincidunt orci ullamcorper, venenatis odio nec, tincidunt odio. Maecenas porta leo sed lorem ullamcorper, sit amet consectetur nibh lobortis. Morbi id est quis elit tincidunt luctus. Curabitur dignissim ante a eleifend fringilla. Pellentesque varius malesuada tellus at vehicula. Sed in urna nulla. Morbi vel tincidunt augue. Cras congue ac lacus vitae semper. Nam metus arcu, tincidunt iaculis faucibus cursus, euismod nec velit.
+                          <br /><br />
+                          Donec dapibus dapibus odio ac varius. Proin dignissim tortor quis sagittis aliquet. Ut lacinia odio nec pharetra finibus. Curabitur id lacus vitae nunc mattis iaculis vitae vel erat. Sed et blandit leo, in sollicitudin metus. Cras lobortis turpis augue, sed pulvinar enim interdum vel. Maecenas vel risus eget purus pulvinar rutrum. Sed dolor dui, euismod a vulputate et, rhoncus id massa. Etiam eget lorem sed diam consequat ultrices. Suspendisse sit amet porta diam, id auctor metus. Nullam viverra ut est et consequat. Nunc cursus fermentum gravida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+
+          {/* Grid Section Column 3 */}
+          <div className={style.gridSections}></div>
+        </div>
+      </section>
     </div>
     
+    {/* FOOTER SECTION
+    **Footer is called here***/}
+    {/* <Footer/> */}
    
  
     </>
